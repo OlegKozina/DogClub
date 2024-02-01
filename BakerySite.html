@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сучасна Пекарня</title>
+    <link rel="stylesheet" href="../Bakery/SCSS/main.css">
+</head>
+<body>
+ <header class="header">
+    <div class="container">
+       <div class="header__container">
+        <nav class="header__nav">
+            <a class="header__logo" href="BakerySite.html">
+                <img src="./Html_Images/logo.svg" alt="Логотип сучасної пекарні">
+            </a>
+            <ul class="header__menu">
+                <li><a class="link" href="#traditions">Our traditions</a></li>
+                <li><a class="link" href="#cooks">Bakers</a></li>
+                <li><a class="link" href="#formats">Formats</a></li>
+                <li><a class="link" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <button class="header__button modal-btn-open" type="button" >Request a call</button>
+        <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+                <use href="./Html_Images/icons.svg#icon-Vector"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu">
+            <button class="mobile-menu__button menu-btn-close" type="button"><img src="./Html_Images/icon.svg" alt=""></button>
+            <ul class="mobile-menu__nav">
+                <li> <img src="./Html_Images/logo_mobile_menu.svg" alt="Логотип сучасної пекарні"></li>
+                <li><a class="mobile-menu__link menu-btn-close" href="#traditions">Our traditions</a></li>
+                <li><a class="mobile-menu__link menu-btn-close" href="#cooks">Bakers</a></li>
+                <li><a class="mobile-menu__link menu-btn-close" href="#formats">Formats</a></li>
+                <li><a class="mobile-menu__link menu-btn-close" href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+       </div> 
+    </div>
+ </header>
+ <main>
+     <section class="hero-section">
+       <div class="container">
+        <h1 class="hero-section__title"><span class="text-brand">Modern   </span>Bakery</h1>
+        <button class="hero-section__button modal-btn-open" type="button" >Request a call</button>
+       </div>
+     </section>
+    <section class="advantages-section">
+       <div class="container">
+        <h2 class="visually-hidden">Our advantages</h2>
+        <ul class="advantages-section__list">
+            <li class="advantages-section__item">Budget-friendly formats</li>
+            <li class="advantages-section__item">Experienced management team</li>
+            <li class="advantages-section__item">Great demand on the market</li>
+        </ul>
+       </div>
+    </section>
+     <section class="traditions-section" id="traditions">
+        <div class="container">
+            <div class="traditions-section__container">
+                <div class="traditions-section__content">
+                  <h2 class="traditions-section__title section__titles">A new format of traditions</h2>
+                  <p class="traditions-section__text"><span class="text-brand text-bold text-uppercase">Modern bakery</span> — this is a bakery that took all the best, and preserved the taste of  traditional baking and the naturalness of the ingredients </p>
+                  <p class="traditions-section__text traditions-section__text--limited">We work as the most famous networks—
+                  <span class="text-brand text-bold">5 minutes and the order is ready</span>.
+                        Our bakeries also have a stylish design
+                          and high quality service!</p>
+                </div>
+                <img class="traditions-section__baker-image" 
+                srcset="./Html_Images/baker-man.jpg 1x, ./Html_Images/baker-man@2x.jpg 2x"
+                src="./Html_Images/baker-man.jpg" alt="Чоловік пекар">  
+            </div> 
+        </div>
+     </section>
+     <section class="cooks-section section" id="cooks">
+        <div class="container">
+            <h2 class="cooks-section__title section__titles section__titles--centered">Our best <span class="text-brand">bakers</span></h2>
+            <ul class="cooks-section__container">
+                <li> <article class="chefs-item">
+                  <img class="chefs-item__image" src="./Html_Images/Nastia.jpg" alt="Пекар Настя">
+                  <div class="chefs-item__text">
+                    <h3 class="chefs-item__cook">Nastya</h3>
+                    <p class="chefs-item__text">Hi, I'm Nastya </p>
+                    <p class="chefs-item__text">For 10 years I have been implementing
+                        interesting  <br> and tasty ideas.</p>
+                    <p class="chefs-item__text">I will bake for you <br>
+                        the most delicious products!</p>
+                  </div>
+               </article></li>
+               <li> <article class="chefs-item">
+                <img class="chefs-item__image" src="./Html_Images/Vlad.jpg" alt="Пекар Влад">
+                <div class="chefs-item__text">
+                    <h3 class="chefs-item__cook">Vlad</h3>
+                    <p class="chefs-item__text">Hi, I'm Vlad</p>
+                    <p class="chefs-item__text">I have 18 years of baking experience 
+                        MODERN BAKERY is our love, which we share with you every time through our pastries!</p>
+                    <p class="chefs-item__text">I will make a unique filling for you for any taste!</p>
+                  </div>
+               </article></li>
+           </ul>
+           </div>
+     </section>
+     <section class="formats-section section" id="formats">
+       <div class="container">
+        <h2 class="formats-section__title section__titles section__titles--centered">Formats</h2>
+       <div class="formats-section__container">
+        <button class="formats-section__button carousel-button"type="button">
+            <svg class="carousel-arrow" width="16" height="16">
+                <use href="./Html_Images/icons.svg#icon-arrow"></use>
+            </svg>
+        </button>
+        <ul class="formats-section__list">
+            <li class="formats-section__item"> <article class="format-card format-card--card1">
+                <h3 class="format-card__item" lang="en">Walrus</h3>
+               <div class="format-card__text"> 
+                <p>Size: up to 120 m2</p>
+                <p>Menu: extended menu </p> 
+                <p>Staff: 2 cashiers, 2 bakers, 2 <br>baker's assistants, 2 versatile waiters</p>
+                <p>Seats: yes</p>
+            </div>
+            </article></li>
+            <li class="formats-section__item"><article class="format-card format-card--card2">
+                <h3 class="format-card__item" lang="en">Horseshoe</h3>
+                <div class="format-card__text">
+                <p>Size: up to 25 m2</p>
+                <p>Menu: the most popular menu items</p>
+                <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
+                <p>Seats: none</p>
+                </div>
+            </article></li>
+            <li class="formats-section__item"><article class="format-card format-card--card3">
+                <h3 class="format-card__item" lang="en">Handlebar</h3>
+                <div class="format-card__text">
+                <p>Size: up to 15 m2</p>
+                <p>Menu: the most popular menu items </p>
+                <p> Staff: 1 salesperson, 1 baker, 1 baker's assistant</p>
+                <p> Seats: none</p>
+                </div>
+            </article></li>
+        </ul>
+        <button class="formats-section__button carousel-button1" type="button">
+            <svg class="carousel-arrow" width="16" height="16">
+                <use href="./Html_Images/icons.svg#icon-arrow"></use>
+            </svg>
+        </button>
+       </div>
+       </div>
+     </section>
+     <section clas="contacts-section section" id="contacts">
+        <div class="container">
+            <div class="contacts-section__container">
+                <div class="contacts-section__form">
+                    <h2 class="contacts-section__title section__titles">Join the bakery network</h2>
+                <p class="contacts-section__form-instruction">Fill out the form so we can contact you</p>
+                <form name="contact-form" autocomplete="off" novalidate>
+                    <div class="form-field">
+                      <label class="form-field__label visually-hidden" for="user-name">Name</label>
+                      <input class="form-field__input" type="text" id="user-name" name="user-name" placeholder="Name">
+                    </div>
+                   <div class="form-field">
+                      <label class="form-field__label visually-hidden" for="phone">Phone</label>
+                      <input class="form-field__input" type="tel" id="phone" name="phone" placeholder="Phone">
+                   </div>
+                    <div class="form-field">
+                      <label class="form-field__label visually-hidden" for="e-mail">E-mail</label>
+                    <input class="form-field__input" type="email" id="e-mail" name="e-mail" placeholder="Your e-mail">
+                    </div>
+                   <button class="form-field__button modal-btn-open" type="submit" >Request a call</button>
+                   <p class="form-field__terms">By clicking the button I agree with <a class="form-field__terms-link" href="#">privacy policy</a></p>
+                  </form>
+                </div>
+               <iframe class="contacts-section__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1728.3902700299825!2d-113.49473926336957!3d53.54323228164413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0224f4fad4c0b%3A0xaf55097e5e001440!2z0K3QtNC80L7QvdGC0L7QvSDQodC40YLQuCDQodC10L3RgtGA!5e0!3m2!1sru!2sca!4v1706565945450!5m2!1sru!2sca"
+                width="400" 
+                height="395" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </div>
+     </section>
+ </main>
+ <footer class="footer">
+<div class="container">
+    <div class="footer__container">
+        <nav class="footer__nav">
+            <div class="footer__logo">
+                <a href="BakerySite.html">
+                    <img src="./Html_Images/logo.svg" alt="Логотип сучасної пекарні">
+                </a>
+            </div>
+            <div class="footer__menu">
+                <ul>
+                    <li><a class="link" href="#traditions">Franchise</a></li>
+                    <li><a class="link" href="#cooks">Bakers</a></li>
+                    <li><a class="link" href="#formats">Formats</a></li>
+                    <li><a class="link" href="#contacts">Contacts</a></li>
+                </ul>
+                <address>
+                    <ul>
+                        <li><a class="footer__contacts_item" href="tel:+380960000007">+ 1 (325) 333 7777</a></li>
+                        <li><a class="footer__contacts_item" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
+                        <li><a class="footer__contacts_item" href="https://maps.app.goo.gl/S6ubsjYejrpp1G1W6" target="_blank"> Edmonton, AB,
+                            13000 67 st NW AB T0C0C0</a></li>
+                        <li>
+                            <div class="footer__icons">
+                                <a class="footer__contacts_item" href="#">
+                                    <svg class="footer__address-icon" width="32" height="32">
+                                        <use href="./Html_Images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                                <a class="footer__contacts_item" href="#">
+                                    <svg class="footer__address-icon" width="32" height="32">
+                                        <use href="./Html_Images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                            
+                    </ul>
+                </address>
+            </div>
+        </nav>
+        <ul>
+            <li> <a class="footer__contacts_item" href="#" target="_blank">Privacy Policy</a></li>
+            <li> <p class="footer__protection" >&copy;Data is protected!</p></li>
+        </ul>
+       
+    </div>
+</div>
+ </footer>
+ <div class="backdrop is-hidden">
+    <div class="modal">
+        <button class="modal__cross-button modal-btn-close" type="button"><img src="./Html_Images/icon.svg" alt=""></button>
+        <h2 class="modal__form-title section__titles">Request a call</h2>
+        <p class="modal__form-instruction">Leave a request and our specialist will contact you!</p>
+        <form name="contact-form" autocomplete="off" validate>
+          <div class="form-field">
+            <label class="form-field__label visually-hidden" for="user-name">Name</label>
+            <input class="form-field__input" 
+                type="text" 
+                id="user-name" 
+                name="user-name" 
+                placeholder="Name" 
+                minlength="2"
+                maxlength="20"
+                required>
+          </div>
+         <div class="form-field">
+            <label class="form-field__label visually-hidden" for="phone">Phone</label>
+            <input class="form-field__input" 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="Phone" 
+                pattern="^\+[0-9]{12}"
+                required>
+         </div>
+          <div class="form-field">
+            <label class="form-field__label visually-hidden" for="e-mail">E-mail</label>
+          <input class="form-field__input" type="email" id="e-mail" name="e-mail" placeholder="Your e-mail" required>
+          </div>
+         <button class="form-field__button modal-btn-open" type="submit">Request a call</button>
+         <p class="form-field__terms">By clicking the button I agree with <a class="form-field__terms-link" href="#">privacy policy</a></p>
+        </form>
+    </div> 
+ </div>
+ <script src="./JS/modal.js"></script>
+ <script src="./JS/mobile-menu.js"></script>
+ <!-- <script src="./JS/js_lesson2.js"></script> -->
+ <!-- <script src="./JS/js_lesson3.js"></script> -->
+ <!-- <script src="./JS/js_lesson4.js"></script> -->
+</body>
+</html>
+
+
