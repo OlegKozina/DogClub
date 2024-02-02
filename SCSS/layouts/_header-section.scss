@@ -10,13 +10,14 @@
     }
     &__container{
         display: flex;
-        gap: 115px;
+        gap: 80px;
     }
     &__nav{
         display: flex;
-        gap: 115px;
+        gap: 80px;
     }
     &__menu{
+        padding-left: 0;
         display: flex;
         gap: 48px;
     }

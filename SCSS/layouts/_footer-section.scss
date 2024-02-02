@@ -5,8 +5,14 @@
         display: flex;
         gap: 136px;
     }
+    &__icons{
+        display: flex;
+        flex-direction: column;
+    }
     &__logo{
         fill: var(--color_primary_orange);
+        margin: 0;
+        padding: 0;
         
     }
     margin-bottom: 40px;

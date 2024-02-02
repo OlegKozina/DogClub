@@ -97,6 +97,7 @@
             </svg></button>
             <ul class="customers-section__customers">
                 <li class="customers-section__customer"><img class="customers-section__photo" src="./Images/Customer1.jpg" alt="">
+                    <div class="customers-section__rectangle"></div>
                     <p class="customers-section__name">Christin & Tom</p>
                     <p class="customers-section__text">Love the overall workout experience!</p>
                     <ul class="customers-section__icons">
@@ -120,6 +121,7 @@
                  
                 </li>
                 <li class="customers-section__customer"><img class="customers-section__photo" src="./Images/Customer2.jpg" alt=""> 
+                    <div class="customers-section__rectangle"></div>
                     <p class="customers-section__name">Anna & Tobby</p>
                     <p class="customers-section__text">Amazing Products & Delivery on time.</p>
                     <ul class="customers-section__icons">
@@ -135,13 +137,14 @@
                         <li class="customers-section__icon"><svg width="32" height="32">
                             <use href="./Images/icons.svg#icon-Bone"></use>
                         </svg></li>
-                        <li class="customers-section__icon"><svg width="32" height="32">
+                        <li class="customers-section__icon1"><svg width="32" height="32">
                             <use href="./Images/icons.svg#icon-Bone"></use>
                         </svg></li>
                         <li class="customers-section__mark">4/5</li>
                     </ul>
                 </li>
                 <li class="customers-section__customer"><img class="customers-section__photo" src="./Images/Customer3.jpg" alt="">
+                    <div class="customers-section__rectangle"></div>
                     <p class="customers-section__name">Sindy & Kitch</p>
                     <p class="customers-section__text">Great job with the trainer!</p>
                     <ul class="customers-section__icons">
@@ -169,6 +172,7 @@
             </svg></button>
         </div>
     </div>
+    <div class="rectangle"></div>
     </section>
     <section class="section contacts-section" id="contacts">
         <div class="container contacts-section__container">
@@ -198,12 +202,18 @@
     <footer class="section footer">
         <div class="container footer__container">
             <div class="footer__icons">
-
-            <a class='footer__logo' href="DogSite.html"><svg width="128" height="128">
+            <a class='footer__logo' href="DogSite.html"><svg width="128" height="64">
                     <use href="./Images/icons.svg#icon-dogclub-logo"></use>
                 </svg>
             </a>
-                
+            <a class='footer__logo' href="DogSite.html"><svg width="32" height="32">
+                <use href="./Images/icons.svg#icon-instagram"></use>
+            </svg>
+             </a>
+            <a class='footer__logo' href="DogSite.html"><svg width="32" height="32">
+            <use href="./Images/icons.svg#icon-facebook"></use>
+             </svg>
+             </a>
             </div>
             <ul class="footer__menu">
                 <li><a class="link" href="#lesstalk">Less talk</a></li>
@@ -225,10 +235,44 @@
                     </form>
                       <p>I agree to the privacy policy</p>
             </div>
-
         </div>
     </footer>
-    <div class="backdrop"></div>
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal__cross-button modal-btn-close" type="button"><img src="./Html_Images/icon.svg" alt=""></button>
+            <h2 class="modal__form-title section__titles">Request a call</h2>
+            <p class="modal__form-instruction">Leave a request and our specialist will contact you!</p>
+            <form name="contact-form" autocomplete="off" validate>
+              <div class="form-field">
+                <label class="form-field__label visually-hidden" for="user-name">Name</label>
+                <input class="form-field__input" 
+                    type="text" 
+                    id="user-name" 
+                    name="user-name" 
+                    placeholder="Name" 
+                    minlength="2"
+                    maxlength="20"
+                    required>
+              </div>
+             <div class="form-field">
+                <label class="form-field__label visually-hidden" for="phone">Phone</label>
+                <input class="form-field__input" 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    placeholder="Phone" 
+                    pattern="^\+[0-9]{12}"
+                    required>
+             </div>
+              <div class="form-field">
+                <label class="form-field__label visually-hidden" for="e-mail">E-mail</label>
+              <input class="form-field__input" type="email" id="e-mail" name="e-mail" placeholder="Your e-mail" required>
+              </div>
+             <button class="form-field__button modal-btn-open" type="submit">Request a call</button>
+             <p class="form-field__terms">By clicking the button I agree with <a class="form-field__terms-link" href="#">privacy policy</a></p>
+            </form>
+        </div> 
+     </div>
     <script src="./JS/mobile-menu.js"></script>
     <script src="./JS/modal.js"></script>
     <script src="./JS/nutrition.js"></script>
