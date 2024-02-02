@@ -1,0 +1,19 @@
+.hero-section{
+    &__title{
+        font-size: 72px;
+        font-family: 'Rowdies', sans-serif;
+        max-width: 635px;
+        border-radius: 50%;
+    } 
+    &__definition{
+        max-width: 499px;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__picture{
+        border-radius: 50%;
+     }
+}

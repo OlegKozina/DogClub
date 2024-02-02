@@ -1,0 +1,35 @@
+.header{
+    margin-top: 32px;
+    &__logos{
+        display: flex;
+        margin-left: 108px;
+    }
+
+    &__logo{
+        fill: var(--color_primary_orange);
+    }
+    &__container{
+        display: flex;
+        gap: 115px;
+    }
+    &__nav{
+        display: flex;
+        gap: 115px;
+    }
+    &__menu{
+        display: flex;
+        gap: 48px;
+    }
+    &__buttons{
+        display: flex;
+       gap: 24px;
+    }
+    &__basket{
+        fill: var(--color_primary_orange);
+        border: none;
+        background-color: transparent;
+        &:hover{
+            fill: var(--color_secondary_orange);
+        }
+    }
+}

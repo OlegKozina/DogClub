@@ -1,0 +1,11 @@
+.letstalk-section{
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    &__info{
+        max-width: 640px;
+    }
+}

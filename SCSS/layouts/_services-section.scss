@@ -1,0 +1,32 @@
+.services-section{
+&__categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+&__service{
+    border: 1px solid lightgray;
+        border-radius: 32px;
+        height: 181px;
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+}
+&__service-name{
+    color: var(--color_primary_orange);
+    position: relative;
+    bottom: -40px;
+
+}
+
+&__more{
+    color: var(--color_primary_orange);
+    position: relative;
+    bottom: -80px;
+    font-size: 18px;
+}
+}

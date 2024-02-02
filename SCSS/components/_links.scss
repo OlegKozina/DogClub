@@ -1,0 +1,6 @@
+.link{
+    color: var(--color_primary_black);
+    text-decoration: none;
+    &:hover{
+        color: var(--color_primary_orange);}
+    }
