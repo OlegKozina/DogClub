@@ -1,0 +1,55 @@
+.customers-section{
+    &__container{
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+
+    &__customers{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding-left: 0;
+    }
+    &__customer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__photo{
+        border-radius: 24px;
+        
+    }
+    &__name{
+        color: var(--color_primary_white);
+        font-size: 24px;
+        position: relative;
+        top: -120px;
+        line-height: 0.5;
+    }
+    &__text{
+        color: var(--color_primary_white);
+        font-size: 16px;
+        position: relative;
+        top: -110px;
+    }
+    &__icons{
+        display: flex;
+        
+        gap: 8px;
+        fill: var(--color_primary_orange);
+        position: relative;
+        top: -80px;
+        left: -40px;
+
+    }
+    &__mark{
+        color: var(--color_primary_orange);
+        position: relative;
+        left: 40px;
+    }
+}
+

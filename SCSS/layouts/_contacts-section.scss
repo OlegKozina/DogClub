@@ -1,0 +1,48 @@
+.contacts-section{
+position: relative;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    &__form_button{
+        margin: 0;
+    }
+    &__form-field{
+        border-radius: 17px;
+        border-color: var(--color_primary_orange);
+        padding: 8px 40px;
+    }
+    &__input{
+        font-size: 18px;
+    }
+
+    &::before{
+        background-image: url(/Images/dogwithleashimage.svg);
+        position:absolute;
+        content: '';
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 353px;
+        height:520px;
+    }
+    &::after{
+        background-image: url(/Images/browndogimage.svg);
+        position:absolute;
+        content: '';
+        background-repeat: no-repeat;
+        bottom: 0px;
+        right: 0;
+        width: 322px;
+        height:752px;
+    }
+}

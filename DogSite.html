@@ -89,19 +89,114 @@
     </div>
     </section>
     <section class="section customers-section" id="customers">
-        <div class="container">
+        <div class="container ">
         <h2 class="section-titles centered">Happy customer</h2>
-
+        <div class="customers-section__container">
+            <button class="swiper-button-prev"><svg width="32" height="32">
+                <use href="./Images/icons.svg#icon-Arrow_button"></use>
+            </svg></button>
+            <ul class="customers-section__customers">
+                <li class="customers-section__customer"><img class="customers-section__photo" src="./Images/Customer1.jpg" alt="">
+                    <p class="customers-section__name">Christin & Tom</p>
+                    <p class="customers-section__text">Love the overall workout experience!</p>
+                    <ul class="customers-section__icons">
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__mark">5/5</li>
+                    </ul>
+                 
+                </li>
+                <li class="customers-section__customer"><img class="customers-section__photo" src="./Images/Customer2.jpg" alt=""> 
+                    <p class="customers-section__name">Anna & Tobby</p>
+                    <p class="customers-section__text">Amazing Products & Delivery on time.</p>
+                    <ul class="customers-section__icons">
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__mark">4/5</li>
+                    </ul>
+                </li>
+                <li class="customers-section__customer"><img class="customers-section__photo" src="./Images/Customer3.jpg" alt="">
+                    <p class="customers-section__name">Sindy & Kitch</p>
+                    <p class="customers-section__text">Great job with the trainer!</p>
+                    <ul class="customers-section__icons">
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__icon"><svg width="32" height="32">
+                            <use href="./Images/icons.svg#icon-Bone"></use>
+                        </svg></li>
+                        <li class="customers-section__mark">5/5</li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="swiper-button-next"><svg width="32" height="32">
+                <use href="./Images/icons.svg#icon-Arrow_button"></use>
+            </svg></button>
+        </div>
     </div>
     </section>
     <section class="section contacts-section" id="contacts">
-        <div class="container">
+        <div class="container contacts-section__container">
         <h2 class="section-titles centered">Our experts will take care of your friend</h2>
-
+        <p>Fill out the form so we can contact you!</p>
+        <form class="contacts-section__form" name="contact-form" autocomplete="off" novalidate>
+            <div class="contacts-section__form-field">
+                <label class="contacts-section__form-label visually-hidden" for="user-name">Your name</label>
+                <input class="contacts-section__input" type="text" id="user-name" name="user-name" placeholder="Your name">
+              </div>
+              <div class="contacts-section__form-field">
+                <label class="contacts-section__form-label visually-hidden" for="user-name">Pet name</label>
+                <input class="contacts-section__input" type="text" id="user-name" name="user-name" placeholder="Pet name">
+              </div>
+              <div class="contacts-section__form-field">
+                <label class="contacts-section__form-label visually-hidden" for="phone">Phone</label>
+                <input class="contacts-section__input" type="tel" id="phone" name="phone" placeholder="Your phone">
+             </div>
+             <div class="contacts-section__form-field">
+                <label class="contacts-section__form-label visually-hidden" for="phone">E-mail</label>
+                <input class="contacts-section__input" type="tel" id="phone" name="phone" placeholder="Your email">
+             </div>
+             <button class="contacts-section__form_button button" type="submit">Contact us</button>
+        </form>
     </div>
     </section>
     <footer class="section footer">
-        <div class="container">
+        <div class="container footer__container">
             <div class="footer__icons">
 
             <a class='footer__logo' href="DogSite.html"><svg width="128" height="128">
@@ -116,12 +211,20 @@
                 <li><a class="link" href="#customers">Happy customer</a></li>
                 <li><a class="link" href="#contacts">Contact</a></li>
             </ul>
-            <ul class="footer__form">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <div class="footer__form+">
+                <form class="footer__form" name="contact-form" autocomplete="off" novalidate>
+                    <div class="footer__form-field">
+                        <label class="footer__form-label visually-hidden" for="user-name">Your name</label>
+                        <input class="footer__input" type="text" id="user-name" name="user-name" placeholder="Your name">
+                      </div>
+                      <div class="footer__form-field">
+                        <label class="footer__form-label visually-hidden" for="user-name">Pet name</label>
+                        <input class="footer__input" type="text" id="user-name" name="user-name" placeholder="Pet name">
+                      </div>
+                      <button class="footer__form_button button" type="submit">Contact us</button>
+                    </form>
+                      <p>I agree to the privacy policy</p>
+            </div>
 
         </div>
     </footer>

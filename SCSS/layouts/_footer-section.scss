@@ -1,6 +1,35 @@
 .footer{
+    background-color: var(--color_secondary_white);
+    position: relative;
+    &__container{
+        display: flex;
+        gap: 136px;
+    }
     &__logo{
         fill: var(--color_primary_orange);
         
+    }
+    margin-bottom: 40px;
+    &__form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    
+    }
+    &__form_button{
+        margin: 0;
+        padding: 16 32;
+    }
+    &::after{
+        background-image: url(/Images/footerdogimage.png);
+        position:absolute;
+        content: '';
+        background-repeat: no-repeat;
+        bottom: -45px;
+        right: 180px;
+        width: 292px;
+        height:305px;
     }
 }

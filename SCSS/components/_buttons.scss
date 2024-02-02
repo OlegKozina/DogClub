@@ -11,3 +11,9 @@
         color: var(--color_secondary_white);
     }
 }
+
+.swiper-button-next, .swiper-button-prev{
+    background-color: transparent;
+    border: none;
+    fill: var(--color_secondary_grey);
+}
