@@ -1,6 +1,7 @@
 .contacts-section{
 position: relative;
-background-color: var(--color_secondary_lightpurple);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,243,255,1) 65%, rgba(241,243,255,1) 100%);
+z-index: -2;
     &__container{
         display: flex;
         flex-direction: column;
@@ -9,6 +10,7 @@ background-color: var(--color_secondary_lightpurple);
     }
     &__title{
         margin-bottom: 0;
+        z-index: 1;
     }
     &__form{
         display: flex;
@@ -43,6 +45,7 @@ background-color: var(--color_secondary_lightpurple);
         left: 0;
         width: 353px;
         height:520px;
+        z-index: 1;
     }
     &::after{
         background-image: url(/Images/browndogimage.svg);
@@ -53,5 +56,15 @@ background-color: var(--color_secondary_lightpurple);
         right: 0;
         width: 322px;
         height:752px;
+    }
+    .wave svg{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        fill: var(--color_primary_white);
     }
 }

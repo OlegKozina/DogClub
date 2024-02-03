@@ -1,8 +1,10 @@
 .customers-section{
+    
     &__container{
         display: flex;
         align-items: center;
         gap: 26px;
+        position: relative;
         
     }
     &__rectangle{
@@ -68,6 +70,26 @@
         color: var(--color_primary_orange);
         position: relative;
         left: 40px;
+    }
+    &__paw-icon1, &__paw-icon2, &__paw-icon3 {
+        position: absolute;
+        fill: var(--color_secondary_white);
+       
+    }
+    &__paw-icon1{
+        left: 0;
+        top: -150px;
+        transform: rotate(45deg);
+    }
+    &__paw-icon2{
+        left: -200px;
+        bottom: -50px;
+        transform: rotate(45deg);
+    }
+    &__paw-icon3{
+        right: -200px;
+        top: -150px;
+        transform: rotate(-45deg);
     }
 }
 

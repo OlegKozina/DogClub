@@ -1,5 +1,5 @@
 .services-section{
-    background-color: var(--color_secondary_white);
+   
     position: relative;
     &__icon{
         position: absolute;
@@ -22,6 +22,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background: linear-gradient(0deg, rgba(255,250,243,1) 0%, rgba(255,250,243,1) 35%, rgba(255,255,255,1) 100%);;
 
 }
 &__service-name{
@@ -36,5 +37,22 @@
     position: relative;
     bottom: -80px;
     font-size: 18px;
+    
+}
+&__BackgroundVector{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    max-width: 2920px;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+&__arrow{
+    position: relative;
+    bottom: -83px;
+    left: -10px;
+    
 }
 }

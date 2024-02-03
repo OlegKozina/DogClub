@@ -1,12 +1,26 @@
 .hero-section{
-    margin-top: 50px;
-    margin-bottom: 100px;
-    position: relative;
-    background-color: var(--color_secondary_white);
-   
-    &__icon1, &__icon2, &__icon3 {
+ position: relative;
+    &__BackgroundVector{
         position: absolute;
+        top: -100px;
+        left: 0px;
+        max-height: 750px;
+        z-index: -1;
+        width: 1920px;
+        
+    }
+    margin-top: 30px;
+    margin-bottom: 300px;
+    position: relative;
+    
+   
+    &__icon1, &__icon2, &__icon3, &__icon4, &__icon5, &__icon6  {
+        position: absolute;
+        z-index: 1;
        
+    }
+    &__icon4, &__icon5, &__icon6{
+        fill: var(--color_secondary_white);
     }
     &__icon1{
         fill: var(--color_secondary_purple);
@@ -25,17 +39,32 @@
         transform: rotate(75deg);
         right: 500px;
     }
+    &__icon4{
+        right: 650px;
+        top: 90px;
+    }
+    &__icon5{
+        right: 930px;
+        top: 270px;
+        transform: rotate(75deg);
+    }
+    &__icon6{
+        right: 560px;
+        top: 370px;
+        transform: rotate(-45deg);
+    }
     &__dog-icon2, &__dog-icon1{
         position: absolute;
         border-radius: 50%;
+        z-index: 1;
     }
     &__dog-icon1{
         top: 60px;
-        right: 760px;
+        right: 770px;
     }
     &__dog-icon2{
-        right: 600px;
-        top: 150px;
+        right: 570px;
+        top: 100px;
     }
 
     &__title{
@@ -63,5 +92,12 @@
         fill: var(--color_secondary_orange);
         top: 0;
         right: 1100px;
+     }
+     &__dog-background{
+        position: absolute;
+        right: 520px;
+        top: 90px;
+        transform: rotate(15deg);
+        z-index: 0;
      }
 }

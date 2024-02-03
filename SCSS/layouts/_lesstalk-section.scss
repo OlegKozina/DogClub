@@ -50,4 +50,23 @@
         z-index: 3;
         cursor: pointer;
     }
+    &__icon1, &__icon2, &__icon3 {
+        position: absolute;
+        fill: var(--color_secondary_white);
+       
+    }
+    &__icon1{
+        left: -150px;
+        transform: rotate(45deg);
+    }
+    &__icon2{
+        left: 29px;
+        top: -122px;
+        
+    }
+    &__icon3{
+        top:-150px;
+        right: -150px;
+        transform: rotate(-45deg);
+    }
 }
