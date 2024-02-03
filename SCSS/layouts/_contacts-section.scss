@@ -1,10 +1,14 @@
 .contacts-section{
 position: relative;
+background-color: var(--color_secondary_lightpurple);
     &__container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    &__title{
+        margin-bottom: 0;
     }
     &__form{
         display: flex;
@@ -23,6 +27,11 @@ position: relative;
     }
     &__input{
         font-size: 18px;
+    }
+    &__form-instruction{
+        text-align: center;
+        color: var(--color_secondary_grey);
+        margin: 20px;
     }
 
     &::before{

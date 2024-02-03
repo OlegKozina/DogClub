@@ -1,9 +1,49 @@
 .hero-section{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    background-color: var(--color_secondary_white);
+   
+    &__icon1, &__icon2, &__icon3 {
+        position: absolute;
+       
+    }
+    &__icon1{
+        fill: var(--color_secondary_purple);
+        top: 150px;
+        right: 950px;
+    }
+    &__icon2{
+        fill: var(--color_secondary_orange);
+        bottom: 20px;
+        right: 950px;
+        transform: rotate(-90deg);
+    }
+    &__icon3{
+        fill:deeppink;
+        top: 300px;
+        transform: rotate(75deg);
+        right: 500px;
+    }
+    &__dog-icon2, &__dog-icon1{
+        position: absolute;
+        border-radius: 50%;
+    }
+    &__dog-icon1{
+        top: 60px;
+        right: 760px;
+    }
+    &__dog-icon2{
+        right: 600px;
+        top: 150px;
+    }
+
     &__title{
         font-size: 72px;
         font-family: 'Rowdies', sans-serif;
         max-width: 635px;
         border-radius: 50%;
+        line-height: 1;
     } 
     &__definition{
         max-width: 499px;
@@ -15,5 +55,13 @@
     }
     &__picture{
         border-radius: 50%;
+        position: relative;
+        bottom: -150px;
+     }
+     &__arrow{
+        position: absolute;
+        fill: var(--color_secondary_orange);
+        top: 0;
+        right: 1100px;
      }
 }

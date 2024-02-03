@@ -1,4 +1,12 @@
 .services-section{
+    background-color: var(--color_secondary_white);
+    position: relative;
+    &__icon{
+        position: absolute;
+        right: 400px;
+        fill: var(--color_primary_orange);
+        top: 0;
+    }
 &__categories{
     display: flex;
     justify-content: center;

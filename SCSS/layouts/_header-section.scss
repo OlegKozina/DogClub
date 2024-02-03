@@ -8,6 +8,11 @@
     &__logo{
         fill: var(--color_primary_orange);
     }
+    &__logos{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
     &__container{
         display: flex;
         gap: 80px;
@@ -20,6 +25,7 @@
         padding-left: 0;
         display: flex;
         gap: 48px;
+        align-items: center;
     }
     &__buttons{
         display: flex;

@@ -92,7 +92,7 @@ address {
   --color_secondary_white:#FFFAF3;
   --color_secondary_middlepurple:#F1F3FF;
   --color_secondary_grey:#839AA9;
-  --color_secondary_lightpurple:#839AA9;
+  --color_secondary_lightpurple:#F9F9FF;
   --color_secondary_purple:#D9A6FF;
 }
 
@@ -111,9 +111,16 @@ address {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  background-color: transparent;
+  background-color: var(--color_secondary_grey);
   border: none;
-  fill: var(--color_secondary_grey);
+  fill: var(--color_primary_white);
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+}
+
+.swiper-button-next {
+  transform: rotate(180deg);
 }
 
 .container {
@@ -132,12 +139,16 @@ address {
 
 .contacts-section {
   position: relative;
+  background-color: var(--color_secondary_lightpurple);
 }
 .contacts-section__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.contacts-section__title {
+  margin-bottom: 0;
 }
 .contacts-section__form {
   display: flex;
@@ -156,6 +167,11 @@ address {
 }
 .contacts-section__input {
   font-size: 18px;
+}
+.contacts-section__form-instruction {
+  text-align: center;
+  color: var(--color_secondary_grey);
+  margin: 20px;
 }
 .contacts-section::before {
   background-image: url(/Images/dogwithleashimage.svg);
@@ -240,6 +256,7 @@ address {
 }
 
 .footer {
+  padding: 24px 0;
   background-color: var(--color_secondary_white);
   position: relative;
   margin-bottom: 40px;
@@ -252,17 +269,29 @@ address {
   display: flex;
   flex-direction: column;
 }
+.footer__logo-icons {
+  display: flex;
+  align-items: center;
+}
 .footer__logo {
   fill: var(--color_primary_orange);
   margin: 0;
   padding: 0;
+}
+.footer__socials {
+  display: flex;
+  gap: 16px;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .footer__form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 16px;
 }
 .footer__form_button {
   margin: 0;
@@ -281,6 +310,7 @@ address {
 
 .backdrop {
   position: fixed;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,20 +335,96 @@ address {
 }
 
 .modal {
+  margin-top: 72px;
+  z-index: 2;
   position: relative;
   width: 100%;
-  max-width: 880px;
+  max-width: 750px;
   height: 100%;
-  max-height: 880px;
-  background-color: var(--colorch);
+  max-height: 700px;
+  background-color: var(--color_secondary_white);
   border-radius: 32px;
-  padding: 48px;
-  overflow-y: auto;
+  padding: 120px 86px 86px;
 }
-@media screen and (min-width: 1280px) {
-  .modal {
-    padding: 128px;
-  }
+.modal__form_margin {
+  margin-top: 50px;
+}
+.modal__cross-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+.modal__form-title {
+  text-align: center;
+  font-size: 56px;
+  margin: 0;
+  max-width: 605px;
+  position: relative;
+  left: 70px;
+}
+.modal__form-instruction {
+  text-align: center;
+  color: var(--color_secondary_grey);
+  margin: 20px;
+}
+.modal__form {
+  text-align: center;
+}
+.modal__form_button {
+  margin-bottom: 10px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+.form-field__input {
+  padding: 16px 42px;
+  width: 310px;
+  border-radius: 17px;
+  border: 1px solid var(--color_primary_orange);
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.17;
+}
+.form-field__input::-moz-placeholder {
+  color: var(--color_primary_orange);
+}
+.form-field__input::placeholder {
+  color: var(--color_primary_orange);
+}
+.form-field__input::-moz-placeholder::before {
+  background-image: url(/Images/basket.svg);
+}
+.form-field__input::placeholder::before {
+  background-image: url(/Images/basket.svg);
+}
+.form-field__terms, .form-field__terms-link {
+  font-size: 12px;
+  color: var(--color_secondary_grey);
+  text-align: center;
+}
+
+.checkbox {
+  position: relative;
+  top: 4px;
+  margin-right: 11px;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color_secondary_grey);
+}
+
+input[type=checkbox]:checked {
+  background-color: var(--color_secondary_grey);
 }
 
 .header {
@@ -330,6 +436,11 @@ address {
 }
 .header__logo {
   fill: var(--color_primary_orange);
+}
+.header__logos {
+  gap: 10px;
+  display: flex;
+  align-items: center;
 }
 .header__container {
   display: flex;
@@ -343,6 +454,7 @@ address {
   padding-left: 0;
   display: flex;
   gap: 48px;
+  align-items: center;
 }
 .header__buttons {
   display: flex;
@@ -357,11 +469,50 @@ address {
   fill: var(--color_secondary_orange);
 }
 
+.hero-section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: relative;
+  background-color: var(--color_secondary_white);
+}
+.hero-section__icon1, .hero-section__icon2, .hero-section__icon3 {
+  position: absolute;
+}
+.hero-section__icon1 {
+  fill: var(--color_secondary_purple);
+  top: 150px;
+  right: 950px;
+}
+.hero-section__icon2 {
+  fill: var(--color_secondary_orange);
+  bottom: 20px;
+  right: 950px;
+  transform: rotate(-90deg);
+}
+.hero-section__icon3 {
+  fill: deeppink;
+  top: 300px;
+  transform: rotate(75deg);
+  right: 500px;
+}
+.hero-section__dog-icon2, .hero-section__dog-icon1 {
+  position: absolute;
+  border-radius: 50%;
+}
+.hero-section__dog-icon1 {
+  top: 60px;
+  right: 760px;
+}
+.hero-section__dog-icon2 {
+  right: 600px;
+  top: 150px;
+}
 .hero-section__title {
   font-size: 72px;
   font-family: "Rowdies", sans-serif;
   max-width: 635px;
   border-radius: 50%;
+  line-height: 1;
 }
 .hero-section__definition {
   max-width: 499px;
@@ -373,18 +524,79 @@ address {
 }
 .hero-section__picture {
   border-radius: 50%;
+  position: relative;
+  bottom: -150px;
+}
+.hero-section__arrow {
+  position: absolute;
+  fill: var(--color_secondary_orange);
+  top: 0;
+  right: 1100px;
 }
 
-.letstalk-section__container {
+.lesstalk-section {
+  position: relative;
+}
+.lesstalk-section__image {
+  z-index: 1;
+}
+.lesstalk-section__container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 60px;
 }
-.letstalk-section__info {
-  max-width: 640px;
+.lesstalk-section__info {
+  max-width: 540px;
+}
+.lesstalk-section__vector_purple {
+  position: absolute;
+  left: 50px;
+  z-index: 0;
+}
+.lesstalk-section__paw-icon1, .lesstalk-section__paw-icon2, .lesstalk-section__paw-icon3 {
+  fill: var(--color_secondary_grey);
+  position: absolute;
+}
+.lesstalk-section__paw-icon1 {
+  transform: rotate(-45deg);
+  left: 140px;
+  bottom: 120px;
+}
+.lesstalk-section__paw-icon2 {
+  left: 250px;
+  top: -20px;
+}
+.lesstalk-section__paw-icon3 {
+  transform: rotate(45deg);
+  left: 450px;
+  top: 140px;
+}
+.lesstalk-section__video-vector {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  z-index: 1;
+}
+.lesstalk-section__video {
+  position: absolute;
+  top: 30px;
+  left: 435px;
+  z-index: 3;
+  cursor: pointer;
 }
 
+.services-section {
+  background-color: var(--color_secondary_white);
+  position: relative;
+}
+.services-section__icon {
+  position: absolute;
+  right: 400px;
+  fill: var(--color_primary_orange);
+  top: 0;
+}
 .services-section__categories {
   display: flex;
   justify-content: center;

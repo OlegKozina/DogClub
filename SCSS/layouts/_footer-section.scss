@@ -1,6 +1,8 @@
 .footer{
+    padding: 24px 0;
     background-color: var(--color_secondary_white);
     position: relative;
+    margin-bottom: 40px;
     &__container{
         display: flex;
         gap: 136px;
@@ -9,19 +11,34 @@
         display: flex;
         flex-direction: column;
     }
+    &__logo-icons{
+        display: flex;
+        
+        align-items: center;
+    }
     &__logo{
         fill: var(--color_primary_orange);
         margin: 0;
         padding: 0;
         
     }
-    margin-bottom: 40px;
+    &__socials{
+        display: flex; 
+        gap: 16px;
+    }
+
+    &__menu{
+        display: flex; 
+        flex-direction: column;
+        gap: 16px;
+    }
+
     &__form{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 16px;
+        
     
     }
     &__form_button{

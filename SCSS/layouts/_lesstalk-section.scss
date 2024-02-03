@@ -1,11 +1,53 @@
-.letstalk-section{
+.lesstalk-section{
+    position: relative;
+    &__image{
+        z-index: 1;
+    }
     &__container{
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 24px;
+        gap: 60px;
     }
     &__info{
-        max-width: 640px;
+        max-width: 540px;
+    }
+    &__vector_purple{
+        position: absolute;
+        left: 50px;
+        z-index: 0;
+    }
+    &__paw-icon1, &__paw-icon2, &__paw-icon3{
+        fill: var(--color_secondary_grey);
+        position: absolute;
+    }
+    &__paw-icon1{
+        transform: rotate(-45deg);
+        left: 140px;
+        bottom: 120px;
+    }
+    &__paw-icon2{
+        
+        left: 250px;
+        top: -20px;
+    }
+    &__paw-icon3{
+        transform: rotate(45deg);
+        left: 450px;
+        top: 140px;
+    }
+    &__video-vector{
+        position: absolute;
+        top: 0;
+        left: 400px;
+        z-index: 1;
+    }
+    &__video{
+        position: absolute;
+        top: 30px;
+        left: 435px;
+        z-index: 3;
+        cursor: pointer;
     }
 }
