@@ -12,15 +12,32 @@
     }
 }
 
-.swiper-button-next, .swiper-button-prev{
+// .swiper-button-next, .swiper-button-prev{
     
-    background-color: var(--color_secondary_grey);
-    border: none;
-    fill: var(--color_primary_white);
-    border-radius: 50%;
-    height: 44px;
-    width: 44px;
+//     background-color: var(--color_secondary_grey);
+//     border: none;
+//     fill: var(--color_primary_white);
+//     border-radius: 50%;
+//     height: 44px;
+//     width: 44px;
+// }
+// .swiper-button-next{
+//     transform: rotate(180deg);
+// }
+
+.swiper-button-prev, .swiper-button-next{
+    border: 0;
+    background-color: transparent;
+    display: none;
+   
 }
-.swiper-button-next{
-    transform: rotate(180deg);
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: -20px !important;
+    left: auto;
+    
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: -50px !important;
+    right: auto;
 }
