@@ -40,7 +40,9 @@
         background-color: transparent;
         &:hover{
             fill: var(--color_secondary_orange);
+            cursor: pointer;
         }
+      
     }
     &__icon1, &__icon2{
         position: absolute;

@@ -34,7 +34,7 @@
           </ul>
         </div>
         <div class="header__buttons">
-            <button class="header__basket production-open" type="button" ><svg width="32" height="32">
+            <button class="header__basket production-open" type="button" onclick="openWindow()"><svg width="32" height="32">
                 <use href="./Images/icons.svg#icon-basket"></use>
             </svg></button>
             <button class="header__button modal-btn-open button" type="button" >Request a call</button>
@@ -452,7 +452,7 @@
         var swiper = new Swiper(".mySwiper", {
           loop: true,
           slidesPerView: 1,
-          spaceBetween: 10,
+          spaceBetween: 50,
           breakpoints: {
             480:{
                 slidesPerView: 2,
@@ -474,6 +474,10 @@
           keyboard: true,
           mousewheel: true,
         });
+
+        function openWindow(){
+        window.open("BakerySite.html");
+        }
       </script>
 
     <script src="./JS/mobile-menu.js"></script>

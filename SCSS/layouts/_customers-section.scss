@@ -21,13 +21,8 @@
         
     }
 
-    &__customers{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        padding-left: 0;
-    }
+
+
     &__customer{
         display: flex;
         flex-direction: column;
@@ -97,10 +92,16 @@
 //     padding-left: 0;
   
 // }
+// .swiper {
+//     width: 1200px;
+//     height: 90%;
+//   }
 .swiper {
+    margin-left: auto;
+    margin-right: auto;
     width: 1200px;
-    height: 90%;
   }
+
   .swiper-slide {
     text-align: center;
     font-size: 18px;
