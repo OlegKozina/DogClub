@@ -29,7 +29,6 @@ address {
   margin-left: auto;
   margin-right: auto;
   color: var(--color_primary_black);
-  font-family: "Rowdies", sans-serif;
 }
 
 .section-titles.centered {
@@ -769,6 +768,8 @@ input[type=checkbox]:checked {
   align-items: center;
   justify-content: center;
   max-height: 50px;
+  position: relative;
+  z-index: 0 !important;
 }
 .production-modal__title {
   color: var(--color_primary_orange);
@@ -799,6 +800,12 @@ input[type=checkbox]:checked {
   overflow: hidden;
   gap: 32px;
 }
+.production-modal .products-list__card {
+  box-shadow: 0px 0px 0px white;
+}
+.production-modal .products-list__card:hover {
+  box-shadow: 0px 8px 16px 0px rgba(24, 24, 23, 0.0784313725);
+}
 .production-modal .products-list__item {
   max-width: 288px;
   width: 100%;
@@ -812,12 +819,17 @@ input[type=checkbox]:checked {
   justify-content: center;
   gap: 8px;
   color: var(--color_secondary_grey);
+  margin-bottom: 10px;
 }
 .production-modal .products-list__item__gold-star {
   fill: var(--color_primary_orange);
 }
 .production-modal .products-list__item_grey-star {
   fill: var(--color_primary_grey);
+}
+.production-modal .products-list__item__price {
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 .services-section {
