@@ -288,6 +288,32 @@ address {
   transform: rotate(-45deg);
 }
 
+.swiper-wrapper {
+  padding-left: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 90%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 90%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer {
   padding: 24px 0;
   background-color: var(--color_secondary_white);
