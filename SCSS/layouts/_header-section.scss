@@ -1,6 +1,9 @@
 .header{
    position: relative;
-   z-index: 4;
+//    position: fixed;
+//    left: 460px;
+   background-color: var(--color_primary_white);
+   z-index: 1;
     &__logos{
         display: flex;
         margin-left: 108px;
