@@ -44,6 +44,25 @@ address {
   overflow: hidden;
 }
 
+.select {
+  min-width: 250px;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  /* other styles for aesthetics */
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Rowdies";
@@ -552,6 +571,7 @@ input[type=checkbox]:checked {
 .header__container {
   display: flex;
   gap: 80px;
+  position: relative;
 }
 .header__nav {
   display: flex;
@@ -603,10 +623,11 @@ input[type=checkbox]:checked {
 .hero-section__BackgroundVector {
   position: absolute;
   top: -100px;
-  left: 0px;
+  left: -450px;
   max-height: 750px;
   z-index: -1;
-  width: 1920px;
+  max-width: 2920px;
+  width: 100%;
 }
 .hero-section__icon1, .hero-section__icon2, .hero-section__icon3, .hero-section__icon4, .hero-section__icon5, .hero-section__icon6 {
   position: absolute;
@@ -618,31 +639,31 @@ input[type=checkbox]:checked {
 .hero-section__icon1 {
   fill: var(--color_secondary_purple);
   top: 150px;
-  right: 950px;
+  right: 200px;
 }
 .hero-section__icon2 {
   fill: var(--color_secondary_orange);
   bottom: 20px;
-  right: 950px;
+  right: 600px;
   transform: rotate(-90deg);
 }
 .hero-section__icon3 {
   fill: deeppink;
   top: 300px;
   transform: rotate(75deg);
-  right: 500px;
+  right: 0px;
 }
 .hero-section__icon4 {
-  right: 650px;
+  right: 294px;
   top: 90px;
 }
 .hero-section__icon5 {
-  right: 930px;
-  top: 270px;
+  right: 80px;
+  top: 360px;
   transform: rotate(75deg);
 }
 .hero-section__icon6 {
-  right: 560px;
+  right: 526px;
   top: 370px;
   transform: rotate(-45deg);
 }
@@ -653,10 +674,10 @@ input[type=checkbox]:checked {
 }
 .hero-section__dog-icon1 {
   top: 60px;
-  right: 770px;
+  right: 400px;
 }
 .hero-section__dog-icon2 {
-  right: 570px;
+  right: 0px;
   top: 100px;
 }
 .hero-section__title {
@@ -673,6 +694,8 @@ input[type=checkbox]:checked {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  width: 100%;
 }
 .hero-section__picture {
   border-radius: 50%;
@@ -683,11 +706,11 @@ input[type=checkbox]:checked {
   position: absolute;
   fill: var(--color_secondary_orange);
   top: 0;
-  right: 1100px;
+  right: 600px;
 }
 .hero-section__dog-background {
   position: absolute;
-  right: 520px;
+  right: 85px;
   top: 90px;
   transform: rotate(15deg);
   z-index: 0;
