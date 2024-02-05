@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header relative">
    <div class="container">
      <div class="header__container">
         <div class="header__nav">
@@ -40,7 +40,7 @@
             <button class="header__button modal-btn-open button" type="button" >Request a call</button>
             <div class="mobile-menu"></div>
         </div>
-        <div class="header__icons">
+        <div class="header__icons relative">
             <svg class="header__icon1" width="150" height="150">
                 <use href="./Images/icons.svg#icon-pawprint_grey"></use>
             </svg>
@@ -355,7 +355,7 @@
           </svg>
     </div>
     </section>
-    <footer class="section footer">
+    <footer class="section footer footer-relative">
         <div class="container footer__container">
             <div class="footer__icons">
                 <div class="footer__logo-icons"><a class="footer__logo logo1" href="">
@@ -455,14 +455,14 @@
             <div class="production-modal__nav">
                 <h2 class="production-modal__title">Nutrition</h2>
                 <p class="production-modal__sorting">Sorting:</p>
-                <button class="production-modal__sort-button" type="button">Popularity</button>
-                <button class="production-modal__sort-button" type="button">Cheaper First</button>
-                <button class="production-modal__sort-button" type="button">More expensive first</button>
-                <button class="production-modal__sort-button" type="button">By name</button>
-                <button class="production-modal__sort-button" type="button">New ones first</button>
+                <select name="" id="select">
+                <option value="Default"> Default</option>
+                <option value="LowToHigh"> Low to high</option>
+                <option value="HighToLow"> High to low</option>
+            </select>     
             </div>
             <ul class="products-list">
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product1.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 37875</p>
@@ -485,11 +485,12 @@
                     </div>
                 
                 <p>Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)</p>
-                <p class="products-list__item__price">136.00$</p>
+                <p class="products-list__item__price">$136.00</p>
                 <button class="button" type="button">Buy</button>
                 </article>
+                <h4 class="h4-is-hidden">$136.00</h4>
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product2.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 34905</p>
@@ -515,8 +516,9 @@
                 <p class="products-list__item__price">140.00$</p>
                 <button class="button" type="button">Buy</button>
                 </article>
+                <h4 class="h4-is-hidden">$140.00</h4>
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product3.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 00027</p>
@@ -542,8 +544,9 @@
                 <p class="products-list__item__price">346.00$</p>
                 <button class="button" type="button">Buy</button>
                 </article>
+                <h4 class="h4-is-hidden">$346.00</h4>
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product1.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 00028</p>
@@ -569,8 +572,9 @@
                 <p class="products-list__item__price">136.00$</p>
                 <button class="button" type="button">Buy</button>
                 </article>
+                <h4 class="h4-is-hidden">$136.00</h4>
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product2.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 37876</p>
@@ -596,8 +600,9 @@
                     <p class="products-list__item__price" products-list__item__price>140.00$</p>
                 <button class="button" type="button">Buy</button>
                 </article>
+                <h4 class="h4-is-hidden">$140.00</h4>
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product3.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 37975</p>
@@ -623,8 +628,9 @@
                     <p class="products-list__item__price">346.00$</p>
                 <button class="button" type="button">Buy</button>
                 </article>
+                <h4 class="h4-is-hidden">$346.00</h4>
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product1.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 47875</p>
@@ -650,8 +656,9 @@
                 <p class="products-list__item__price">136.00$</p>
                 <button class="button" type="button">Buy</button>
                 </article>
+                <h4 class="h4-is-hidden">$136.00</h4>
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product2.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 00030</p>
@@ -676,9 +683,10 @@
                     <p>Dry food for dogs of small breeds Savory 3 kg (lamb)</p>
                     <p class="products-list__item__price">140.00$</p>
                 <button class="button" type="button">Buy</button>
-                </article>    
+                </article>  
+                <h4 class="h4-is-hidden">$140.00</h4>  
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product3.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 37435</p>
@@ -703,9 +711,10 @@
                     <p>Dry food for dogs of all breeds Savory 5 kg (rabbit and duck)</p>
                     <p class="products-list__item__price">346.00$</p>
                 <button class="button" type="button">Buy</button>
-                </article>      
+                </article>  
+                <h4 class="h4-is-hidden">$346.00</h4>    
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product3.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 37435</p>
@@ -731,8 +740,9 @@
                     <p class="products-list__item__price">346.00$</p>
                 <button class="button" type="button">Buy</button>
                 </article>
+                <h4 class="h4-is-hidden">$346.00</h4>
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product2.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 31875</p>
@@ -758,8 +768,9 @@
                     <p class="products-list__item__price">140.00$</p>
                 <button class="button" type="button">Buy</button>
                 </article>
+                <h4 class="h4-is-hidden">$140.00</h4>
                 </li>
-                <li class="products-list__card"><article class="products-list__item">
+                <li data-category="" data-price="" class="products-list__card"><article class="products-list__item">
                     <img src="/Images/product3.png" alt="">
                     <div class="products-list__item__rating">
                         <p>Vendor code: 11119</p>
@@ -785,6 +796,7 @@
                     <p class="products-list__item__price">346.00$</p>
                 <button class="button" type="button">Buy</button>
                 </article>
+                <h4 class="h4-is-hidden">$346.00</h4>
                 </li>
             </ul>
             </div> 

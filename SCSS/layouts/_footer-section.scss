@@ -1,10 +1,23 @@
 .footer{
+    position: fixed;
+    bottom: 0;
+    left: 365px;
+    z-index: 4;
+    padding: 0 227px !important;
     padding: 24px 0;
     background-color: var(--color_secondary_white);
-    position: relative;
-    margin-bottom: 40px;
+   
+    // margin-bottom: 40px;
 
-
+    &.footer-relative{
+        position: relative;
+        left: 0;
+        bottom: -30px;
+        padding-top: 20px !important;
+        &::after{
+            right: 180px;
+        }
+    }
 
 
     
@@ -56,7 +69,7 @@
         content: '';
         background-repeat: no-repeat;
         bottom: -45px;
-        right: 180px;
+        right: 0px;
         width: 292px;
         height:305px;
     }
