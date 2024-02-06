@@ -1,5 +1,6 @@
 .button{
     padding: 16px 32px;
+    // max-width: 200px;
     background-color: var(--color_primary_orange);
     border-radius: 8px;
     color: var(--color_primary_white);
@@ -52,5 +53,9 @@ background-color: var(--color_secondary_grey);
 }
 
 .swiper-button-next{
+    display: none !important;
     transform: rotate(180deg);
+    @media screen and (min-width: $bp-desktop){
+        display: block !important;
+    }
 }

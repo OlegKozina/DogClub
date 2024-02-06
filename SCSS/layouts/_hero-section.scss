@@ -3,20 +3,51 @@
     &__BackgroundVector{
         position: absolute;
         top: -100px;
-        left: -450px;
+        left: 0px;
         max-height: 750px;
         z-index: -1;
         max-width: 2920px;
         width:100%;
-       
+        display: flex;
+        flex-shrink: 1;
+        @media screen and (min-width: $bp-desktop){
+            max-height: 750px;
+            z-index: -1;
+            max-width: 2920px;
+            width:150%;
+            left: -450px;
+        }
   
         
         
     }
     margin-top: 30px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     position: relative;
+    @media screen and (min-width: $bp-tablet){
+    margin-bottom: 249px;
+    }
     
+    &__icons{
+        position: relative;
+        width: 0;
+
+        @media screen and (min-width: $bp-tablet){
+            position: relative;
+            max-height: 405px;
+            height: 50%;
+            max-width: 495px;
+            width: 100%;
+            // left: 139px;
+        }
+        @media screen and (min-width: $bp-desktop){
+            max-height: 505px;
+            height: 100%;
+            max-width: 615px;
+            width: 100%;
+            // left: 0;
+        }
+    }
    
     &__icon1, &__icon2, &__icon3, &__icon4, &__icon5, &__icon6  {
         position: absolute;
@@ -28,33 +59,77 @@
     }
     &__icon1{
         fill: var(--color_secondary_purple);
-        top: 150px;
-        right: 200px;
+        top: 147px;
+        right: 217px;
+        @media screen and (min-width: $bp-tablet){
+            top: 15px;
+            right: 233px;
+        };
+        @media screen and (min-width: $bp-desktop){
+            top: 193px;
+            right: 452px;
+        };
     }
     &__icon2{
+
+        bottom: -173px;
+        right: 323px;
         fill: var(--color_secondary_orange);
-        bottom: 20px;
-        right: 600px;
-        transform: rotate(-90deg);
+        transform: rotate(-45deg);
+        @media screen and (min-width: $bp-tablet){
+            bottom: 130px;
+            right: 355px; 
+
+        }
+
+        @media screen and (min-width: $bp-desktop){
+            bottom: 3px;
+            right: 520px;
+        }
+
     }
     &__icon3{
         fill:deeppink;
-        top: 300px;
-        transform: rotate(75deg);
-        right: 0px;
+        top: 150px;
+        transform: rotate(-45deg);
+        right: 102px;
+    @media screen and (min-width: $bp-tablet){
+        top: 256px;
+        right: 355px;
+    }
+        @media screen and (min-width: $bp-desktop){
+            top: 333px;
+
+            right: 124px;
+        }
+
     }
     &__icon4{
-        right: 294px;
-        top: 90px;
+
+        display: none;
+
+        @media screen and (min-width: $bp-desktop){
+            right: 242px;
+            display: block;
+            right: 195px;
+            top: 0px;
+
+        }
+   
     }
     &__icon5{
-        right: 80px;
-        top: 360px;
-        transform: rotate(75deg);
+        display: none;
+        @media screen and (min-width: $bp-desktop){
+            display: block;
+            right: 82px;
+            top: 164px;
+            transform: rotate(75deg);
+        }
+      
     }
     &__icon6{
-        right: 526px;
-        top: 370px;
+        right: 614px;
+        top: 168px ;
         transform: rotate(-45deg);
     }
     &__dog-icon2, &__dog-icon1{
@@ -63,47 +138,106 @@
         z-index: 1;
     }
     &__dog-icon1{
-        top: 60px;
-        right: 400px;
+        top: 51px;
+        right: 366px;
+        @media screen and (min-width: $bp-tablet){
+            top: -20px;
+            right: 400px;
+        }
+     
     }
     &__dog-icon2{
-        right: 0px;
-        top: 100px;
-    }
 
+        right: 50px;
+        top: 54px;
+        @media screen and (min-width: $bp-tablet){
+            right: 447px;
+            top: 265px;
+        }
+
+        @media screen and (min-width: $bp-desktop){
+            right: 0px;
+            top: 100px;
+        }
+
+    }
+    &__text{
+        text-align: center;
+        @media screen and (min-width: $bp-tablet){
+            text-align: left;
+        }
+    }
     &__title{
-        font-size: 72px;
+        font-size: 32px;
         font-family: 'Rowdies', sans-serif;
         max-width: 635px;
         border-radius: 50%;
         line-height: 1;
+
+        @media screen and (min-width: $bp-tablet){
+
+        }
+        @media screen and (min-width: $bp-desktop){
+            font-size: 72px;
+        }
+
     } 
     &__definition{
         max-width: 499px;
+        
+
     }
     &__container{
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 100%;
+      
+        // width: 100%;
     }
     &__picture{
         border-radius: 50%;
         position: relative;
-        bottom: -150px;
+        // bottom: -150px;
+        display: none;
+        width: 50%;
+        height: 80%;
+        bottom: -50px;
+        right: -170px;
+            @media screen and (min-width: $bp-tablet){
+                display: block;
+            }
+
      }
     &__arrow{
         position: absolute;
         fill: var(--color_secondary_orange);
-        top: 0;
-        right: 600px;
+       
+        display: none;
+        @media screen and (min-width: $bp-tablet){
+            display: block;
+            top: 0;
+            right: 80px; 
+        }
+        @media screen and (min-width: $bp-desktop){
+            right: 600px;
+        }
      }
     &__dog-background{
         position: absolute;
-        right: 85px;
-        top: 90px;
-        transform: rotate(15deg);
+        // right: 196px;
+        // top: 81px;
+     
         z-index: 0;
+
+        display: none;
+            width: 70%;
+            height: 120%;
+            right: 85px;
+            top: 0;
+            @media screen and (min-width: $bp-tablet){
+                display: block;
+            }
+        
      }
 }

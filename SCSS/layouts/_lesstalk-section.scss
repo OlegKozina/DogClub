@@ -1,22 +1,69 @@
 .lesstalk-section{
     position: relative;
     &__image{
-        z-index: 1;
+
+        display: none;
+        @media screen and (min-width: $bp-tablet){
+            // width: 20%;
+            display: block;
+            z-index: 1;
+        }
     }
     &__container{
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 60px;
+        gap: 0px;
+        @media screen and (min-width: $bp-tablet){
+            gap: 60px;
+        }
+    }
+
+    &__logo-icons{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -40px; 
+    }
+    &__text{
+        text-align: center;
+        // margin-left: 80px; 
+        @media screen and (min-width: $bp-tablet){
+        text-align: start;
+            // margin-left: 0px;
+        }
+
+    }
+    &__title{
+        font-size: 32px;
+        font-weight: 400;
+        font-family: 'Rowdies';
+        text-align: center;
+        @media screen and (min-width: $bp-desktop){
+            font-size: 56px;
+            text-align:start;
+        }
     }
     &__info{
         max-width: 540px;
     }
     &__vector_purple{
-        position: absolute;
-        left: 50px;
-        z-index: 0;
+        display: none;
+
+        // width: 20%;
+
+        @media screen and (min-width: $bp-tablet){
+            display: block;
+            position: absolute;
+            left: 4px; 
+            
+            z-index: 0;
+        }
+        @media screen and (min-width: $bp-desktop){
+            left: 50px;
+        }
+        
     }
     &__paw-icon1, &__paw-icon2, &__paw-icon3{
         fill: var(--color_secondary_grey);
@@ -24,31 +71,59 @@
     }
     &__paw-icon1{
         transform: rotate(-45deg);
-        left: 140px;
+        left: 103px;
         bottom: 120px;
+        @media screen and (min-width: $bp-tablet){
+            left:46px;
+        }
+
     }
     &__paw-icon2{
-        
-        left: 250px;
-        top: -20px;
+        left: 88px;
+        top: 130px;
+        @media screen and (min-width: $bp-tablet){
+            left: 250px;
+            top: -20px;
+        }
+
     }
     &__paw-icon3{
-        transform: rotate(45deg);
-        left: 450px;
-        top: 140px;
+        display: none;
+        @media screen and (min-width: $bp-tablet){
+            display: block;
+            transform: rotate(45deg);
+            left: 450px;
+            top: 140px;
+        }
+      
     }
     &__video-vector{
-        position: absolute;
-        top: 0;
-        left: 400px;
-        z-index: 1;
+        display: none;
+        @media screen and (min-width: $bp-tablet){
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 400px;
+            z-index: 1;
+        }
+        
     }
+
+    // &__button{
+    //     margin-left: 150px;
+    // }
     &__video{
+        display: none;
+        @media screen and (min-width: $bp-tablet){
+        display: block;
         position: absolute;
         top: 30px;
         left: 435px;
         z-index: 3;
         cursor: pointer;
+
+        }
+
     }
     &__icon1, &__icon2, &__icon3 {
         position: absolute;
@@ -60,13 +135,20 @@
         transform: rotate(45deg);
     }
     &__icon2{
-        left: 29px;
-        top: -122px;
-        
+        display: none;
+        @media screen and (min-width: $bp-tablet){
+            left: 29px;
+            top: -122px;
+        }
     }
     &__icon3{
-        top:-150px;
-        right: -150px;
-        transform: rotate(-45deg);
+        display: none;
+        @media screen and (min-width: $bp-tablet){
+            display: block;
+            top: -302px;
+            right: -233px;
+            transform: rotate(-45deg);
+        }
+     
     }
 }

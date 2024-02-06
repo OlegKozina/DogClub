@@ -1,24 +1,18 @@
 .header{
-   
+ 
    position: fixed;
    left: 365px;
    top: -20px;
    padding: 0 87px;
+   width: 100%;
+ 
    &.relative{
     position: relative;
     left: 0;
     top: 0;
     padding: 0;
     z-index: 1;
-    &__icon1{
-        
-        right: 0px;
-    }
-    &__icon2{
-        transform: rotate(45deg);
-        right: 0px;
-        top: 20px;
-    }
+
    }
 
    background-color: var(--color_primary_white);
@@ -28,7 +22,13 @@
         margin-left: 108px;
     }
 
+    &__button {
+        display: none;
+        @media screen and (min-width: $bp-desktop){
+            display: block;
+        }
 
+    }
     &__logo{
         fill: var(--color_primary_orange);
     }
@@ -36,26 +36,45 @@
         gap: 10px;
         display: flex;
         align-items: center;
+        margin-left: 20px;
     }
     &__container{
         display: flex;
         gap: 80px;
         position: relative;
+        justify-content: space-between;
+        @media screen and (min-width: $bp-desktop){
+            flex-grow: 0;
+        }
+   
     }
     &__nav{
         display: flex;
+        position: relative;
         gap: 80px;
+        flex-grow: 1;
+        @media screen and (min-width: $bp-desktop){
+            flex-grow: 0;
+        }
     }
     &__menu{
         padding-left: 0;
-        display: flex;
+        display: none;
         gap: 48px;
         align-items: center;
         z-index: 2;
+        @media screen and (min-width: $bp-desktop){
+            display: flex;
+        }
     }
     &__buttons{
         display: flex;
-       gap: 24px;
+        gap:0px;
+        @media screen and (min-width: $bp-mobile){
+            gap: 24px;
+        }
+   
+    
     }
     &__basket{
         fill: var(--color_primary_orange);
@@ -68,6 +87,10 @@
         }
       
     }
+
+    &__icons{
+        position: relative;
+    }
     &__icon1, &__icon2{
         position: absolute;
         fill: var(--color_secondary_white);
@@ -76,11 +99,22 @@
     &__icon1{
         transform: rotate(-45deg);
         top: -38px;
-        right: 353px;
+        right: 47px;
     }
     &__icon2{
         transform: rotate(45deg);
-        right: 830px;
-        top: -25px;
+        display: none;
+        @media screen and (min-width: $bp-tablet){
+            right: -241px;
+            top: -56px ;
+            display: block;
+        }
+       
+        @media screen and (min-width: $bp-desktop){
+            right: 375px;
+            top: -16px;
+           
+        }
+ 
     }
 }

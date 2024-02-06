@@ -82,9 +82,14 @@
         transform: rotate(45deg);
     }
     &__paw-icon3{
-        right: -200px;
-        top: -150px;
-        transform: rotate(-45deg);
+        display: none;
+        @media screen and (min-width: $bp-desktop){
+            display: block;
+            right: 12px;
+            top: -253px;
+            transform: rotate(-45deg);
+        }
+ 
     }
     
 }
@@ -107,8 +112,8 @@
     font-size: 18px;
     background-color: #fff;
     display: flex;
-    flex-shrink: 0;
-    justify-content: center;
+    // flex-shrink: 0;
+    ;
     align-items: center;
   }
   .swiper-slide img {
