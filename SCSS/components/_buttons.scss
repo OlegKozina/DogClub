@@ -22,7 +22,10 @@
     height: 32px !important;
     width: 32px !important;
     width: calc(var(--swiper-navigation-size)/ 34 * 27);
-    z-index: 1 !important;
+    z-index: 0 !important;
+    @media screen and (min-width: $bp-desktop){
+        z-index: 1 !important;
+    }
 }
 // .swiper-button-next{
 //     transform: rotate(180deg);

@@ -1,9 +1,9 @@
 .header{
  
    position: fixed;
-   left: 365px;
-   top: -20px;
-   padding: 0 87px;
+   left: 0px;
+   top: 0px;
+   padding: 0 0px;
    width: 100%;
  
    &.relative{
@@ -28,6 +28,15 @@
             display: block;
         }
 
+    }
+    &__burger{
+        background-color: transparent;
+        // margin: 20px 20px;
+        border: none;
+        fill: var(--color_primary_orange);
+        @media screen and (min-width: $bp-desktop){
+            display: none;
+        }
     }
     &__logo{
         fill: var(--color_primary_orange);
@@ -80,7 +89,7 @@
         fill: var(--color_primary_orange);
         border: none;
         background-color: transparent;
-        z-index: 4;
+        z-index: 0;
         &:hover{
             fill: var(--color_secondary_orange);
             cursor: pointer;

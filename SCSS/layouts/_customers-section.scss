@@ -20,7 +20,12 @@
         bottom: 75px;
         
     }
-
+    &__title{
+        font-size: 32px;
+        @media screen and (min-width: $bp-desktop){
+            font-size: 56px;
+        }
+ }
 
 
     &__customer{
@@ -93,10 +98,10 @@
     }
     
 }
-// .swiper-wrapper{
-//     padding-left: 0;
+.swiper-wrapper{
+   z-index: 0 !important;
   
-// }
+}
 // .swiper {
 //     width: 1200px;
 //     height: 90%;
@@ -105,6 +110,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
+    // z-index: 0;
   }
 
   .swiper-slide {
@@ -112,6 +118,7 @@
     font-size: 18px;
     background-color: #fff;
     display: flex;
+    z-index: 0 !important;
     // flex-shrink: 0;
     ;
     align-items: center;

@@ -10,7 +10,12 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,243,255,1) 65
     }
     &__title{
         margin-bottom: 0;
-        z-index: 1;
+        z-index: 0;
+        font-size: 32px;
+        @media screen and (min-width: $bp-desktop){
+        font-size: 56px;
+        }
+
     }
     &__form{
         display: flex;
@@ -18,7 +23,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,243,255,1) 65
         justify-content: center;
         align-items: center;
         gap: 24px;
-        z-index: 2;
+        z-index: 0;
     }
     &__form_button{
         margin: 0;
@@ -35,21 +40,31 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,243,255,1) 65
         text-align: center;
         color: var(--color_secondary_grey);
         margin: 20px;
-        z-index: 1;
+        z-index: 0;
     }
 
     &::before{
-        background-image: url(/Images/dogwithleashimage.svg);
-        position:absolute;
-        content: '';
-        background-repeat: no-repeat;
-        top: 0;
-        left: 0;
-        width: 353px;
-        height:520px;
-        z-index: 1;
+        display: none;
+        @media screen and (min-width: $bp-tablet){
+            display: block;
+            background-image: url(/Images/dogwithleashimage.svg);
+            position:absolute;
+            content: '';
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 353px;
+            height:520px;
+        }
+        @media screen and (min-width: $bp-desktop){
+
+        }
     }
     &::after{
+        display: none;
+        @media screen and (min-width: $bp-tablet){
+            display: block;
         background-image: url(/Images/browndogimage.svg);
         position:absolute;
         content: '';
@@ -58,10 +73,15 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,243,255,1) 65
         right: 0;
         width: 322px;
         height:752px;
+
+    }
+        @media screen and (min-width: $bp-desktop){
+
+        }
     }
     .wave svg{
         position: absolute;
-        z-index: 0;
+        z-index: -1;
         top: 0;
         left: 0;
         width: 100%;

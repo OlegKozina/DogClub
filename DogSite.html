@@ -46,9 +46,31 @@
                 <use href="./Images/icons.svg#icon-basket"></use>
             </svg></button>
             <button class="header__button modal-btn-open button" type="button" >Request a call</button>
-            <div class="mobile-menu"></div>
+            <button class="header__burger mobile-button-open" type="button">
+                <svg width="24" height="24">
+                    <use href="./Images/icons.svg#icon-Burger">
+                    </use>
+                </svg>
+            </button>
         </div>
-        
+        <div class="mobile-menu">
+            <button class="mobile-menu__button mobile-btn-close" type="button"><svg width="32" height="32"><use href="./Images/icons.svg#icon-close"></use></svg></button>
+            <ul class="mobile-menu__nav">
+                <li> <p class="mobile-menu__logo"><svg width="128" height="64">
+                    <use href="./Images/icons.svg#icon-dogclub-logo"></use>
+                </svg></li>
+                <li><a class="link menu-btn-close" href="#lesstalk">Less talk</a></li>
+                <li><a class="link menu-btn-close" href="#services">Services category</a></li>
+                <li><a class="link menu-btn-close" href="#customers">Happy customer</a></li>
+                <li><a class="link menu-btn-close" href="#contacts">Contacts</a></li>
+            </ul>
+            <address>
+                <ul class="mobile-menu__nav-icons">
+                    <li><a href="https://www.instagram.com/okayne__/" target="_blank"> <svg class="mobile-menu__icon" width="32" height="32"><use href="./Images/icons.svg#icon-instagram"></use></svg> </a></li>
+                    <li><a href="https://www.facebook.com/olliekayne" target="_blank"> <svg class="mobile-menu__icon" width="32" height="32"><use href="./Images/icons.svg#icon-facebook"></use></svg> </a></li>
+                </ul>
+            </address>
+        </div>
    </div>
    </header>
     <section class="hero-section">
@@ -140,7 +162,7 @@
     </section>
     <section class="section services-section" id="services">
         <div class="container">
-        <h2 class="section-titles centered">Services category</h2>
+        <h2 class="section-titles centered services-section__title">Services category</h2>
         <div class="services-section__icon"><svg width="128" height="128">
             <use href="./Images/icons.svg#icon-arrow"></use>
         </svg></div>
@@ -165,7 +187,7 @@
     </section>
     <section class="section customers-section" id="customers">
         <div class="container ">
-        <h2 class="section-titles centered">Happy customer</h2>
+        <h2 class="section-titles centered customers-section__title">Happy customer</h2>
         <div class="customers-section__container">
             <button class="swiper-button-prev"><svg width="16" height="16">
                 <use href="./Images/icons.svg#icon-Arrow_button"></use>
@@ -363,7 +385,7 @@
           </svg>
     </div>
     </section>
-    <footer class="section footer footer-relative">
+    <!-- <footer class="section footer footer-relative">
         <div class="container footer__container">
             <div class="footer__icons">
                 <div class="footer__logo-icons"><a class="footer__logo logo1" href="">
@@ -405,7 +427,7 @@
                       <p class="form-field__terms"> <input class="checkbox" type="checkbox"> I agree to the privacy policy</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal__cross-button modal-btn-close" type="button"><svg width="32" height="32">
