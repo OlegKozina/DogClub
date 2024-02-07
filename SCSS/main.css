@@ -137,21 +137,22 @@ select {
   height: 32px !important;
   width: 32px !important;
   width: calc(var(--swiper-navigation-size) / 34 * 27);
-  z-index: 0 !important;
+  display: none !important;
 }
 @media screen and (min-width: 1280px) {
   .swiper-button-next, .swiper-button-prev {
-    z-index: 1 !important;
+    z-index: 11 !important;
+    display: block !important;
   }
 }
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
-  right: -20px !important;
+  right: 0px !important;
   left: auto;
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
-  left: -50px !important;
+  left: 0px !important;
   right: auto;
 }
 
@@ -169,7 +170,6 @@ select {
     display: block !important;
   }
 }
-
 .container {
   width: 100%;
   max-width: 768px;
@@ -266,6 +266,7 @@ select {
     right: 0;
     width: 322px;
     height: 752px;
+    z-index: -1;
   }
 }
 .contacts-section .wave svg {
@@ -284,6 +285,7 @@ select {
   align-items: center;
   gap: 26px;
   position: relative;
+  max-width: 1200px;
 }
 .customers-section__rectangle {
   position: absolute;
@@ -347,6 +349,7 @@ select {
 }
 .customers-section__paw-icon1 {
   left: 0;
+  z-index: -1;
   top: -150px;
   transform: rotate(45deg);
 }
@@ -374,7 +377,17 @@ select {
 .swiper {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 400px;
+}
+@media screen and (min-width: 820px) {
+  .swiper {
+    max-width: 780px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper {
+    max-width: 1160px;
+  }
 }
 
 .swiper-slide {
@@ -860,6 +873,7 @@ input[type=checkbox]:checked {
   right: 614px;
   top: 168px;
   transform: rotate(-45deg);
+  z-index: -1;
 }
 .hero-section__dog-icon2, .hero-section__dog-icon1 {
   position: absolute;
@@ -1121,6 +1135,7 @@ input[type=checkbox]:checked {
     top: -302px;
     right: -233px;
     transform: rotate(-45deg);
+    z-index: -1;
   }
 }
 
@@ -1291,9 +1306,9 @@ input[type=checkbox]:checked {
 }
 .services-section__icon {
   position: absolute;
-  right: 400px;
+  right: 214px;
   fill: var(--color_primary_orange);
-  top: 0;
+  top: -151px;
 }
 .services-section__categories {
   display: flex;
@@ -1301,6 +1316,7 @@ input[type=checkbox]:checked {
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
+  position: relative;
 }
 .services-section__title {
   font-size: 32px;
@@ -1346,4 +1362,7 @@ input[type=checkbox]:checked {
   position: relative;
   bottom: -83px;
   left: -10px;
+}
+.services-section__icon {
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */

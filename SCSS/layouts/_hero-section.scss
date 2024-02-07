@@ -134,6 +134,7 @@
         right: 614px;
         top: 168px ;
         transform: rotate(-45deg);
+        z-index: -1;
     }
     &__dog-icon2, &__dog-icon1{
         position: absolute;

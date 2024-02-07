@@ -163,9 +163,7 @@
     <section class="section services-section" id="services">
         <div class="container">
         <h2 class="section-titles centered services-section__title">Services category</h2>
-        <div class="services-section__icon"><svg width="128" height="128">
-            <use href="./Images/icons.svg#icon-arrow"></use>
-        </svg></div>
+        
         <ul class="services-section__categories">
             <li class="services-section__service"><svg width="64" height="64">
                 <use href="./Images/icons.svg#icon-icon_groom"></use>
@@ -181,6 +179,9 @@
             </svg><p class="services-section__service-name">Bathing</p></li>
             <li class="services-section__more">more services</li>
             <li class="services-section__arrow"><img src="/Images/Arrow 1.svg" alt=""></li>
+            <li class="services-section__icon"><svg width="128" height="128">
+                <use href="./Images/icons.svg#icon-arrow"></use>
+            </svg></li>
         </ul>
         <img class="services-section__BackgroundVector" src="/Images/BackgroundVector 1.png" alt="">
     </div>
@@ -838,18 +839,18 @@
         var swiper = new Swiper(".mySwiper", {
           loop: true,
           slidesPerView: 1,
-          spaceBetween: 10,
+          spaceBetween: 0,
           breakpoints: {
             480:{
                 slidesPerView: 1,
             },
             820:{
                 slidesPerView: 2,
-                spaceBetween: 10
+                spaceBetween: 0
             },
             1280:{
                 slidesPerView: 3,
-                spaceBetween: 10
+                spaceBetween: 0
             }
           },
           navigation: {

@@ -22,31 +22,24 @@
     height: 32px !important;
     width: 32px !important;
     width: calc(var(--swiper-navigation-size)/ 34 * 27);
-    z-index: 0 !important;
+    display: none !important;
+    // z-index: 0 !important;
     @media screen and (min-width: $bp-desktop){
-        z-index: 1 !important;
+        z-index: 11 !important;
+
+        display: block !important;
     }
 }
-// .swiper-button-next{
-//     transform: rotate(180deg);
-// }
 
-// .swiper-button-prev, .swiper-button-next{
-//     border: 0;
-//     background-color: transparent;
-//     display: none;
-    
-   
-// }
 
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
-    right: -20px !important;
+    right: 0px !important;
     left: auto;
     
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
-    left: -50px !important;
+    left: 0px !important;
     right: auto;
 }
 .swiper-button-next:after, .swiper-button-prev:after {
@@ -61,4 +54,11 @@ background-color: var(--color_secondary_grey);
     @media screen and (min-width: $bp-desktop){
         display: block !important;
     }
+
+.swiper-button-prev{
+   
+    @media screen and (min-width: $bp-desktop){
+      
+    }
+}
 }

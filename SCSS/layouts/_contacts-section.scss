@@ -74,6 +74,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,243,255,1) 65
         right: 0;
         width: 322px;
         height:752px;
+        z-index: -1;
 
     }
         @media screen and (min-width: $bp-desktop){

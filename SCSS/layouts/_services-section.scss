@@ -1,11 +1,12 @@
 .services-section{
-   
+    // overflow-x: hidden;
     position: relative;
     &__icon{
         position: absolute;
-        right: 400px;
+        right: 214px;
         fill: var(--color_primary_orange);
-        top: 0;
+        top: -151px;
+        
     }
 &__categories{
     display: flex;
@@ -13,6 +14,7 @@
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
+    position: relative;
 }
 &__title{
     font-size: 32px;
@@ -61,5 +63,8 @@
     bottom: -83px;
     left: -10px;
     
+}
+&__icon{
+    z-index: -1;
 }
 }
