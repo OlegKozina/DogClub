@@ -3,7 +3,7 @@
     bottom: 0;
     left: 365px;
     z-index: 4;
-    padding: 0 227px !important;
+    // padding: 0 227px !important;
     padding: 24px 0;
     background-color: var(--color_secondary_white);
    
@@ -14,25 +14,38 @@
         left: 0;
         bottom: -30px;
         padding-top: 20px !important;
-        &::after{
-            right: 180px;
+        @media screen and (min-width: $bp-desktop){
+            &::after{
+                right: 180px;
+            }
         }
+      
     }
 
 
     
     &__container{
-        display: flex;
+        display: block;
+        text-align: center;
         gap: 136px;
+        @media screen and (min-width: $bp-tablet){
+            display: flex;
+        }
     }
     &__icons{
         display: flex;
         flex-direction: column;
+       
+
     }
     &__logo-icons{
         display: flex;
         
         align-items: center;
+        justify-content: center;
+        @media screen and (min-width: $bp-tablet){
+            justify-content: flex-start;
+        }
     }
     &__logo{
         fill: var(--color_primary_orange);
@@ -43,6 +56,11 @@
     &__socials{
         display: flex; 
         gap: 16px;
+        justify-content: center;
+        @media screen and (min-width: $bp-tablet){
+            justify-content: flex-start;
+        }
+
     }
 
     &__menu{
@@ -68,9 +86,15 @@
         position:absolute;
         content: '';
         background-repeat: no-repeat;
-        bottom: -45px;
-        right: 0px;
+        z-index: -2;
+        top: -256px;
+        right: 2px; 
         width: 292px;
         height:305px;
+        @media screen and (min-width: $bp-tablet){
+            bottom: -45px;
+            right: 0px;
+
+        }
     }
 }

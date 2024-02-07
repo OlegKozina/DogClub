@@ -3,18 +3,18 @@
     position: relative;
     &__icon{
         position: absolute;
-        right: 214px;
+        // right: 214px;
         fill: var(--color_primary_orange);
-        top: -151px;
+        // top: -151px;
         
     }
 &__categories{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     gap: 24px;
-    flex-wrap: wrap;
-    position: relative;
+    // flex-wrap: wrap;
+    // position: relative;
 }
 &__title{
     font-size: 32px;
@@ -22,12 +22,13 @@
         font-size: 56px;
     }
 }
+
 &__service{
     border: 1px solid lightgray;
         border-radius: 32px;
-        height: 181px;
-        width: 240px;
-        display: flex;
+        height: 250px !important;
+        // width: 250px !important;
+        display: flex !important;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -61,10 +62,26 @@
 &__arrow{
     position: relative;
     bottom: -83px;
-    left: -10px;
+    left: -24px;
     
 }
 &__icon{
     z-index: -1;
 }
+}
+.swiper2{
+    position: relative;
+    left: 212px; 
+    max-width: 945px;
+    overflow: hidden;
+    @media screen and (min-width: $bp-desktop){
+        overflow: visible;
+    }
+ 
+}
+.swiper-button-next2{
+    position: absolute;
+    right: -250px;
+    bottom: 0px;
+    cursor: pointer;
 }
