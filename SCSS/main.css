@@ -191,6 +191,7 @@ select {
 
 .contacts-section {
   position: relative;
+  z-index: -2;
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(241, 243, 255) 65%, rgb(241, 243, 255) 100%);
 }
 .contacts-section__container {
@@ -744,7 +745,7 @@ input[type=checkbox]:checked {
 }
 @media screen and (min-width: 820px) {
   .hero-section {
-    margin-bottom: 249px;
+    margin-bottom: 149px;
   }
 }
 .hero-section__icons {
@@ -1335,7 +1336,7 @@ input[type=checkbox]:checked {
   position: absolute;
   top: 0px;
   left: 0;
-  z-index: -1;
+  z-index: -2;
   max-width: 2920px;
   width: 100%;
   max-height: 500px;
