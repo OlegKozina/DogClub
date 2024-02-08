@@ -19,14 +19,17 @@
                 <li><a class="link" href="#contacts">Contacts</a></li>
             </ul>
         </nav>
-        <button class="header__button modal-btn-open" type="button" >Request a call</button>
-        <button class="header__burger menu-btn-open" type="button">
-            
+        <div class="square"> 
+        </div>
+        <input type="date" name="" id="">
+        <button  class="header__button modal-btn-open button" type="button" >Request a call</button>
+        <button on class="header__burger menu-btn-open button" type="button">
+            <img src="./" alt="">
         </button>
         <div class="mobile-menu">
             
             <ul class="mobile-menu__nav">
-               
+     
                 <li><a class="mobile-menu__link menu-btn-close" href="#traditions">Our traditions</a></li>
                 <li><a class="mobile-menu__link menu-btn-close" href="#cooks">Bakers</a></li>
                 <li><a class="mobile-menu__link menu-btn-close" href="#formats">Formats</a></li>
@@ -39,8 +42,8 @@
  <main>
      <section class="hero-section">
        <div class="container">
-        <h1 class="hero-section__title"><span class="text-brand">Modern   </span>Bakery</h1>
-        <button class="hero-section__button modal-btn-open" type="button" >Request a call</button>
+        <h1 class="hero-section__title hidden"><span class="text-brand">Modern </span>Bakery</h1>
+        <button class="hero-section__button modal-btn-open button" type="button" >Request a call</button>
        </div>
      </section>
     <section class="advantages-section">
@@ -52,6 +55,11 @@
             <li class="advantages-section__item">Great demand on the market</li>
         </ul>
        </div>
+       <div  class="textarea">
+        <textarea name="textar" maxlength="30" id="" cols="30" rows="10" class="textarea__item"></textarea>
+        <div class="area_counter">Залишилось <span></span> символів</div>
+       </div>
+       
     </section>
      <section class="traditions-section" id="traditions">
         <div class="container">
@@ -154,7 +162,7 @@
                 <div class="contacts-section__form">
                     <h2 class="contacts-section__title section__titles">Join the bakery network</h2>
                 <p class="contacts-section__form-instruction">Fill out the form so we can contact you</p>
-                <form name="contact-form" autocomplete="off" novalidate>
+                <form id="contact-form" name="contact-form" autocomplete="off" novalidate>
                     <div class="form-field">
                       <label class="form-field__label visually-hidden" for="user-name">Name</label>
                       <input class="form-field__input" type="text" id="user-name" name="user-name" placeholder="Name">
@@ -209,11 +217,15 @@
     </div>
 </div>
  </footer>
+ <style>
+.square{
+    width: 100px;
+    height: 100px;
+    border: 2px solid orange;
+    background-color: aqua;
+}
+ </style>
  <script src="./JS/test.js"></script>
-
- <!-- <script src="./JS/js_lesson2.js"></script> -->
- <!-- <script src="./JS/js_lesson3.js"></script> -->
- <!-- <script src="./JS/js_lesson4.js"></script> -->
 </body>
 </html>
 
