@@ -1,16 +1,95 @@
-const number = 12;
-localStorage.setItem('number', number.toString())
-console.log(localStorage.getItem('number'))
+// import {name} from './test1'
+// console.log("Your name" + name);
 
-const userForm = document.getElementById('contact-form')
 
-const FormData = {};
-userForm.addEventListener('input', function (event){
-    FormData[event.target.name] = event.target.value;
-    localStorage.setItem('userData', JSON.stringify(FormData));
+
+// console.log('Hello'); setTimeout(() => { console.log('World!'); }, 5000)
+// const name = "Oleh"
+// setTimeout(()=>{console.log(name)}, 2000)
+
+class Animal {
+
+    static type = "Mammal"
+
+    constructor(options){
+        this.name = options.name
+        this.color = options.color
+        this.hastail = options.hastail
+        this.age = options.age
+    }
+    voice(){
+        console.log("I am an animal!")
+    }
+
+    get AgeInfo(){
+       return this.age * 7;
+    }
+}
+
+
+class Dog extends Animal{
+
+    constructor(options){
+        super(options)
+        this.breed = options.breed
+    }
+    voice(){
+        console.log("Bark!")
+    }
+
+}
+const jack = new Dog({
+    name: "dog",
+    color: "black",
+    hastail: true, 
+    breed: "corgi",
+    age: 5
 })
-const object = JSON.parse(localStorage.getItem('userData'))
-console.log(object);
+
+class Cat extends Dog {
+    constructor(options){
+        super(options)
+        this.claws = options.claws
+
+    }
+    voice(){
+        console.log("Meow!")
+    }
+}
+
+const susi = new Cat({
+    name: "Susi",
+    color: "grey",
+    hastail: true, 
+    breed: "British",
+    claws: true,
+    age: 6,
+})
+
+
+
+
+// console.log(jack)
+
+
+
+
+
+
+
+// const number = 12;
+// localStorage.setItem('number', number.toString())
+// console.log(localStorage.getItem('number'))
+
+// const userForm = document.getElementById('contact-form')
+
+// const FormData = {};
+// userForm.addEventListener('input', function (event){
+//     FormData[event.target.name] = event.target.value;
+//     localStorage.setItem('userData', JSON.stringify(FormData));
+// })
+// const object = JSON.parse(localStorage.getItem('userData'))
+// console.log(object);
 
 
 

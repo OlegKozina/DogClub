@@ -9,6 +9,13 @@ body{
     font-size: 18px;
     line-height: 1.5;
 }
+
+    *, 
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
 p{
     margin: 0;
 }
