@@ -1,7 +1,7 @@
 $(function(){
 
-    const textP = $('.mainText p').hide(5000);
-    $('.mainText p').show(5000)
+    // const textP = $('.mainText p').hide(5000);
+    // $('.mainText p').show(5000)
 
 
     // const heroTitle = $('.mainText h2').text('Ya lamav steklo!')
@@ -20,12 +20,15 @@ $(function(){
 
 
     function widthandHeight(elem){
-        let classname = "."+elem;
+        let classname = elem;
         let w = $(classname).width()
         let h = $(classname).height()
-        $('.mainText p').text('Width is '+w+'; Height is '+h);
+        $('.receive h2').text('Width is '+w+'; Height is '+h);
     }
-    widthandHeight('btn');
+    widthandHeight('header');
+
+    // $('.mainText').html('<p> New text </p>')
+    $('.mainText').fadeOut(5000).fadeIn(3000)
 
 })
 
