@@ -425,11 +425,18 @@ select {
 
 .footer {
   position: fixed;
-  bottom: 0;
+  bottom: 67px;
   left: 365px;
   z-index: 4;
-  padding: 10px 485px 10px 105px;
+  padding: 10px 313px 10px 105px;
   background-color: var(--color_secondary_white);
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    bottom: 67px;
+    left: 365px;
+    padding: 10px 313px 10px 105px;
+  }
 }
 .footer.footer-relative {
   position: relative;
@@ -521,11 +528,6 @@ select {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 0;
   transition: opacity 1s, visibility 1s;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .is-hidden {
@@ -1240,7 +1242,7 @@ input[type=checkbox]:checked {
 }
 
 .production-modal {
-  margin-top: 72px;
+  margin-top: -70px;
   z-index: 2;
   position: relative;
   width: 100%;

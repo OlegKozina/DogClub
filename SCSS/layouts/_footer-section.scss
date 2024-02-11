@@ -1,11 +1,15 @@
 .footer{
     position: fixed;
-    bottom: 0;
-    left: 365px;
+    bottom: 67px;
+    left: 365px; 
     z-index: 4;
-    // padding: 0 227px !important;
-    padding: 10px 485px 10px 105px;
+    padding: 10px 313px 10px 105px;
     background-color: var(--color_secondary_white);
+    @media screen and (min-width: $bp-desktop){
+        bottom: 67px;
+        left: 365px; 
+        padding: 10px 313px 10px 105px;
+    }
    
     // margin-bottom: 40px;
 
