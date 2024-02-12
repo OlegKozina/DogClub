@@ -16,7 +16,5 @@ $(function(){
     $('.modal-btn-close').click(function(){
         $('.backdrop').toggleClass('is-hidden') 
     })
-    $(window).scroll(function(){
-        alert('Helll');
-    })
+
 })
