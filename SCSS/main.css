@@ -857,18 +857,16 @@ input[type=checkbox]:checked {
   color: var(--color_secondary_orange);
   cursor: pointer;
 }
-.header__icons {
-  position: relative;
-}
 .header__icon1, .header__icon2 {
   position: absolute;
-  fill: var(--color_secondary_white);
   z-index: -1;
 }
 .header__icon1 {
   transform: rotate(-45deg);
-  top: -38px;
-  right: 47px;
+  font-size: 5em;
+  top: 0px;
+  right: 747px;
+  color: var(--color_secondary_white);
 }
 .header__icon2 {
   transform: rotate(45deg);
@@ -876,9 +874,11 @@ input[type=checkbox]:checked {
 }
 @media screen and (min-width: 820px) {
   .header__icon2 {
+    font-size: 5em;
     right: -241px;
     top: -56px;
     display: block;
+    color: var(--color_secondary_white);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -942,6 +942,7 @@ input[type=checkbox]:checked {
 }
 .hero-section__icon1, .hero-section__icon2, .hero-section__icon3, .hero-section__icon4, .hero-section__icon5, .hero-section__icon6 {
   position: absolute;
+  font-size: 4em;
   z-index: 0;
 }
 @media screen and (min-width: 820px) {
@@ -953,7 +954,8 @@ input[type=checkbox]:checked {
   fill: var(--color_secondary_white);
 }
 .hero-section__icon1 {
-  fill: var(--color_secondary_purple);
+  color: var(--color_secondary_purple);
+  font-size: 3em;
   top: 147px;
   right: 217px;
 }
@@ -972,7 +974,7 @@ input[type=checkbox]:checked {
 .hero-section__icon2 {
   bottom: -173px;
   right: 323px;
-  fill: var(--color_secondary_orange);
+  color: var(--color_secondary_orange);
   transform: rotate(-45deg);
 }
 @media screen and (min-width: 820px) {
@@ -988,9 +990,10 @@ input[type=checkbox]:checked {
   }
 }
 .hero-section__icon3 {
-  fill: deeppink;
+  color: deeppink;
+  font-size: 3em;
   top: 150px;
-  transform: rotate(-45deg);
+  transform: rotate(0deg);
   right: 102px;
 }
 @media screen and (min-width: 820px) {
@@ -1006,14 +1009,17 @@ input[type=checkbox]:checked {
   }
 }
 .hero-section__icon4 {
+  position: absolute;
+  color: var(--color_secondary_white);
   display: none;
+  right: 180px;
+  top: 0px;
 }
 @media screen and (min-width: 1280px) {
   .hero-section__icon4 {
-    right: 242px;
+    right: 60px;
+    transform: rotate(45deg);
     display: block;
-    right: 195px;
-    top: 0px;
   }
 }
 .hero-section__icon5 {
@@ -1022,14 +1028,16 @@ input[type=checkbox]:checked {
 @media screen and (min-width: 1280px) {
   .hero-section__icon5 {
     display: block;
-    right: 82px;
-    top: 164px;
-    transform: rotate(75deg);
+    color: var(--color_secondary_white);
+    right: 229px;
+    top: 9px;
+    transform: rotate(359deg);
   }
 }
 .hero-section__icon6 {
-  right: 614px;
-  top: 168px;
+  color: var(--color_secondary_middlepurple);
+  right: 506px;
+  top: 47px;
   transform: rotate(-45deg);
   z-index: -1;
 }

@@ -51,6 +51,7 @@
    
     &__icon1, &__icon2, &__icon3, &__icon4, &__icon5, &__icon6  {
         position: absolute;
+        font-size: 4em;
         z-index: 0;
         @media screen and (min-width: $bp-tablet){
             z-index: 1;
@@ -61,7 +62,8 @@
         fill: var(--color_secondary_white);
     }
     &__icon1{
-        fill: var(--color_secondary_purple);
+        color: var(--color_secondary_purple);
+        font-size: 3em;
         top: 147px;
         right: 217px;
         @media screen and (min-width: $bp-tablet){
@@ -77,7 +79,7 @@
 
         bottom: -173px;
         right: 323px;
-        fill: var(--color_secondary_orange);
+        color: var(--color_secondary_orange);
         transform: rotate(-45deg);
         @media screen and (min-width: $bp-tablet){
             bottom: 130px;
@@ -92,9 +94,10 @@
 
     }
     &__icon3{
-        fill:deeppink;
+        color:deeppink;
+        font-size: 3em;
         top: 150px;
-        transform: rotate(-45deg);
+        transform: rotate(-0deg);
         right: 102px;
     @media screen and (min-width: $bp-tablet){
         top: 256px;
@@ -108,14 +111,16 @@
 
     }
     &__icon4{
-
+        position: absolute;
+        color: var(--color_secondary_white);
         display: none;
-
+        right: 180px;
+        top: 0px;
         @media screen and (min-width: $bp-desktop){
-            right: 242px;
+            right: 60px;
+            transform: rotate(45deg);
             display: block;
-            right: 195px;
-            top: 0px;
+            
 
         }
    
@@ -124,15 +129,17 @@
         display: none;
         @media screen and (min-width: $bp-desktop){
             display: block;
-            right: 82px;
-            top: 164px;
-            transform: rotate(75deg);
+            color: var(--color_secondary_white);
+            right: 229px;
+            top: 9px;
+            transform: rotate(359deg);
         }
       
     }
     &__icon6{
-        right: 614px;
-        top: 168px ;
+        color: var(--color_secondary_middlepurple);
+        right: 506px;
+        top: 47px;
         transform: rotate(-45deg);
         z-index: -1;
     }

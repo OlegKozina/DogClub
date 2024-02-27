@@ -59,15 +59,7 @@
         }
    
     }
-    // &__nav{
-    //     display: flex;
-    //     position: relative;
-    //     gap: 80px;
-    //     flex-grow: 1;
-    //     @media screen and (min-width: $bp-desktop){
-    //         flex-grow: 0;
-    //     }
-    // }
+
     &__menu{
         padding-left: 0;
         display: none;
@@ -101,26 +93,27 @@
       
     }
 
-    &__icons{
-        position: relative;
-    }
+
     &__icon1, &__icon2{
         position: absolute;
-        fill: var(--color_secondary_white);
         z-index: -1;
     }
     &__icon1{
         transform: rotate(-45deg);
-        top: -38px;
-        right: 47px;
+        font-size: 5em;
+        top: 0px;
+        right: 747px; 
+        color: var(--color_secondary_white);
     }
     &__icon2{
         transform: rotate(45deg);
         display: none;
         @media screen and (min-width: $bp-tablet){
+            font-size: 5em;
             right: -241px;
             top: -56px ;
             display: block;
+            color: var(--color_secondary_white);
         }
        
         @media screen and (min-width: $bp-desktop){
