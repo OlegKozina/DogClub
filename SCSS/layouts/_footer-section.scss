@@ -1,8 +1,8 @@
 .footer{
-    position: fixed;
+ 
     bottom: 67px;
     left: 365px; 
-    z-index: 4;
+    // z-index: 4;
     padding: 10px 313px 10px 105px;
     background-color: var(--color_secondary_white);
     @media screen and (min-width: $bp-desktop){
@@ -91,7 +91,7 @@
         position:absolute;
         content: '';
         background-repeat: no-repeat;
-        z-index: -2;
+        z-index: 0;
         top:  -2px;
         // top: -256px;
         right: 200px; 

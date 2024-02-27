@@ -550,10 +550,8 @@ select {
 }
 
 .footer {
-  position: fixed;
   bottom: 67px;
   left: 365px;
-  z-index: 4;
   padding: 10px 313px 10px 105px;
   background-color: var(--color_secondary_white);
 }
@@ -635,7 +633,7 @@ select {
   position: absolute;
   content: "";
   background-repeat: no-repeat;
-  z-index: -2;
+  z-index: 0;
   top: -2px;
   right: 200px;
   width: 292px;
@@ -665,6 +663,10 @@ select {
 
 .modal {
   margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
   position: relative;
   width: 100%;
@@ -674,9 +676,6 @@ select {
   background-color: var(--color_secondary_white);
   border-radius: 32px;
   padding: 120px 86px 86px;
-}
-.modal__form_margin {
-  margin-top: 50px;
 }
 .modal__cross-button {
   border: none;
@@ -692,7 +691,6 @@ select {
   margin: 0;
   max-width: 605px;
   position: relative;
-  left: 70px;
 }
 .modal__form-instruction {
   text-align: center;
@@ -761,20 +759,12 @@ input[type=checkbox]:checked {
 }
 
 .header {
-  position: fixed;
+  position: relative;
   left: 0px;
   top: 0px;
   padding: 0 0px;
   width: 100%;
   background-color: var(--color_primary_white);
-  z-index: 4;
-}
-.header.relative {
-  position: relative;
-  left: 0;
-  top: 0;
-  padding: 0;
-  z-index: 1;
 }
 .header__logos {
   display: flex;

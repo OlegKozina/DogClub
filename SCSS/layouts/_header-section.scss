@@ -1,22 +1,14 @@
 .header{
  
-   position: fixed;
+    position: relative;
    left: 0px;
    top: 0px;
    padding: 0 0px;
    width: 100%;
  
-   &.relative{
-    position: relative;
-    left: 0;
-    top: 0;
-    padding: 0;
-    z-index: 1;
-
-   }
 
    background-color: var(--color_primary_white);
-   z-index: 4;
+//    z-index: 4;
     &__logos{
         display: flex;
         margin-left: 108px;

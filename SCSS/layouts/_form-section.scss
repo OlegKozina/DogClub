@@ -22,6 +22,10 @@
 }
 .modal{
     margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
     position: relative;
     
@@ -33,9 +37,6 @@
     border-radius: 32px;
     padding: 120px 86px 86px;
 
-    &__form_margin{
-        margin-top: 50px;
-    }
  
  
     &__cross-button{
@@ -52,7 +53,7 @@
         margin: 0;
         max-width: 605px;
         position: relative;
-        left: 70px;
+        
     }
     &__form-instruction{
         text-align: center;
