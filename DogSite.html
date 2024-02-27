@@ -6,45 +6,40 @@
     <title>Dog club</title>
     <link rel="stylesheet" href="./SCSS/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./JS/jquery-3.7.1.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header relative">
    <div class="container">
      <div class="header__container">
-        <div class="header__nav">
-            <div class="header__logos">
-                <a class="header__logo logo1" href="#">
-                    <svg width="32" height="32">
-                        <use href="./Images/icons.svg#icon-pawprint_orange"></use>
-                    </svg>
-                    <svg width="128" height="64">
-                        <use href="./Images/icons.svg#icon-dogclub-logo"></use>
-                    </svg>
-                  </a>
-           
+        <div class="header__logos">
+            <div class="header__logo">
+                <i class="fa-solid fa-paw"></i>
+                <img src="./Images/dogclub-logo.svg" alt="">
             </div>
+        </div>
           <ul class="header__menu">
             <li><a class="link" href="#lesstalk">Less talk</a></li>
             <li><a class="link" href="#services">Services category</a></li>
             <li><a class="link" href="#customers">Happy customer</a></li>
             <li><a class="link" href="#contacts">Contact</a></li>
           </ul>
-            <div class="header__icons">
+            <!-- <div class="header__icons">
               <svg class="header__icon1" width="150" height="150">
                 <use href="./Images/icons.svg#icon-pawprint_grey"></use>
             </svg>
             <svg class="header__icon2" width="150" height="150">
                 <use href="./Images/icons.svg#icon-pawprint_grey"></use>
             </svg>
-            </div>
-        </div>
+            </div> -->
         <div class="header__buttons">
-            <button class="header__basket production-open" type="button"><svg width="32" height="32">
-                <use href="./Images/icons.svg#icon-basket"></use>
-            </svg></button>
+            <button class="header__basket production-open" type="button"><i class="fa-solid fa-basket-shopping"></i></button>
             <button class="header__button modal-btn-open button" type="button" >Request a call</button>
             <button class="header__burger mobile-button-open" type="button">
                 <svg width="24" height="24">
@@ -411,6 +406,7 @@
              </a></div>
             </div>
             <ul class="footer__menu">
+                <div class="home">&#x40;</div>
                 <li><a class="link" href="#lesstalk">Less talk</a></li>
                 <li><a class="link" href="#services">Services category</a></li>
                 <li><a class="link" href="#customers">Happy customer</a></li>
@@ -838,67 +834,6 @@
             </div> 
         </div> 
      </div>
-     <script>
-        var swiper1 = new Swiper(".mySwiper1", {
-          loop: true,
-          slidesPerView: 1,
-          spaceBetween: 0,
-          breakpoints: {
-            480:{
-                slidesPerView: 1,
-            },
-            820:{
-                slidesPerView: 2,
-                spaceBetween: 0
-            },
-            1280:{
-                slidesPerView: 3,
-                spaceBetween: 0
-            }
-          },
-          navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            
-          },
-          keyboard: true,
-          mousewheel: true,
-        });
-
-  
-      </script>
-      <script>
-         var swiper2 = new Swiper(".mySwiper2", {
-          loop: true,
-          slidesPerView: 1,
-          spaceBetween: 0,
-          breakpoints: {
-            480:{
-                slidesPerView: 1,
-            },
-            820:{
-                slidesPerView: 1,
-                spaceBetween: 0
-            },
-            1280:{
-                slidesPerView: 4,
-                spaceBetween: 0
-            }
-          },
-          navigation: {
-        nextEl: ".swiper-button-next2",
-     
-      },
-  
-          keyboard: true,
-          mousewheel: true,
-        });
-      </script>
-   
     <script src="./JS/mobile-menu.js"></script>
     <script src="./JS/modal.js"></script>
     <script src="./JS/production.js"></script>

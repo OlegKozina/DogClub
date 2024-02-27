@@ -65,3 +65,11 @@ select {
     color: #000;
     cursor: pointer;
   }
+
+
+  ///Icons
+  .fa-paw{
+    color: var(--color_primary_orange);
+    font-size: 2em;
+    transform: rotate(-90deg);
+  }

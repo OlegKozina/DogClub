@@ -70,6 +70,12 @@ select {
   cursor: pointer;
 }
 
+.fa-paw {
+  color: var(--color_primary_orange);
+  font-size: 2em;
+  transform: rotate(-90deg);
+}
+
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Rowdies";
@@ -629,6 +635,10 @@ input[type=checkbox]:checked {
   background-color: var(--color_secondary_grey);
 }
 
+.home {
+  color: aqua;
+}
+
 .header {
   position: fixed;
   left: 0px;
@@ -669,6 +679,8 @@ input[type=checkbox]:checked {
 }
 .header__logo {
   fill: var(--color_primary_orange);
+  display: flex;
+  align-items: center;
 }
 .header__logos {
   gap: 10px;
@@ -684,17 +696,6 @@ input[type=checkbox]:checked {
 }
 @media screen and (min-width: 1280px) {
   .header__container {
-    flex-grow: 0;
-  }
-}
-.header__nav {
-  display: flex;
-  position: relative;
-  gap: 80px;
-  flex-grow: 1;
-}
-@media screen and (min-width: 1280px) {
-  .header__nav {
     flex-grow: 0;
   }
 }
@@ -722,11 +723,13 @@ input[type=checkbox]:checked {
 .header__basket {
   fill: var(--color_primary_orange);
   border: none;
+  font-size: 2em;
+  color: var(--color_primary_orange);
   background-color: transparent;
   z-index: 0;
 }
 .header__basket:hover {
-  fill: var(--color_secondary_orange);
+  color: var(--color_secondary_orange);
   cursor: pointer;
 }
 .header__icons {
