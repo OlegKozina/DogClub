@@ -280,13 +280,12 @@ select {
   margin: 20px;
   z-index: 0;
 }
-.contacts-section::before {
+.contacts-section__before {
   display: none;
 }
 @media screen and (min-width: 820px) {
-  .contacts-section::before {
+  .contacts-section__before {
     display: block;
-    background-image: url(/Images/dogwithleashimage.svg);
     position: absolute;
     content: "";
     background-repeat: no-repeat;
@@ -297,13 +296,12 @@ select {
     height: 520px;
   }
 }
-.contacts-section::after {
+.contacts-section__after {
   display: none;
 }
 @media screen and (min-width: 820px) {
-  .contacts-section::after {
+  .contacts-section__after {
     display: block;
-    background-image: url(/Images/browndogimage.svg);
     position: absolute;
     content: "";
     background-repeat: no-repeat;
@@ -311,7 +309,6 @@ select {
     right: 0;
     width: 322px;
     height: 752px;
-    z-index: -1;
   }
 }
 .contacts-section .wave svg {
@@ -634,14 +631,13 @@ select {
   margin: 0;
   padding: 16 32;
 }
-.footer::after {
-  background-image: url(/Images/footerdogimage.png);
+.footer__after {
   position: absolute;
   content: "";
   background-repeat: no-repeat;
   z-index: -2;
   top: -2px;
-  right: 2px;
+  right: 200px;
   width: 292px;
   height: 305px;
 }
@@ -1009,8 +1005,7 @@ input[type=checkbox]:checked {
   }
 }
 .hero-section__icon4 {
-  position: absolute;
-  color: var(--color_secondary_white);
+  color: var(--color_secondary_orange);
   display: none;
   right: 180px;
   top: 0px;

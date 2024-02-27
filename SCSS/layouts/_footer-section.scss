@@ -87,15 +87,14 @@
         margin: 0;
         padding: 16 32;
     }
-    &::after{
-        background-image: url(/Images/footerdogimage.png);
+    &__after{
         position:absolute;
         content: '';
         background-repeat: no-repeat;
         z-index: -2;
         top:  -2px;
         // top: -256px;
-        right: 2px; 
+        right: 200px; 
         width: 292px;
         height:305px;
         // @media screen and (min-width: $bp-tablet){
