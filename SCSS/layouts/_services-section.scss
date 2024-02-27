@@ -85,3 +85,20 @@
     bottom: 0px;
     cursor: pointer;
 }
+
+
+
+.carousel .card1 {
+    scroll-snap-align: start;
+    height: 444px;
+    max-width: 345px;
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 24px;
+
+    @media screen and (max-width: 600px){
+      scroll-snap-align: center;
+    }}

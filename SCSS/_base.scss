@@ -95,3 +95,11 @@ select {
         color: var(--color_secondary_orange);
     }
   }
+
+  .fa-bars{
+    color: var(--color_primary_orange);
+    font-size: 2em;
+    &:hover{
+        color: var(--color_secondary_orange);
+    }
+  }

@@ -42,10 +42,7 @@
             <button class="header__basket production-open" type="button"><i class="fa-solid fa-basket-shopping"></i></button>
             <button class="header__button modal-btn-open button" type="button" >Request a call</button>
             <button class="header__burger mobile-button-open" type="button">
-                <svg width="24" height="24">
-                    <use href="./Images/icons.svg#icon-Burger">
-                    </use>
-                </svg>
+                <i class="fa-solid fa-bars"></i>
             </button>
         </div>
         <div class="mobile-menu">
@@ -153,45 +150,34 @@
             </div>
     </div>
     </section>
-    <!-- <section class="section services-section" id="services">
+    <section class="section services-section" id="services">
         <div class="container">
         <h2 class="section-titles centered services-section__title">Services category</h2>
-        <div class="mySwiper2 swiper2">
-            <ul class="services-section__categories swiper-wrapper">
-                <li class="swiper-slide services-section__service "><svg width="64" height="64">
-                    <use href="./Images/icons.svg#icon-icon_groom"></use>
-                </svg><p class="services-section__service-name">Grooming</p></li>
-                <li class="swiper-slide services-section__service "><svg width="64" height="64">
-                    <use href="./Images/icons.svg#icon-icon_feed"></use>
-                </svg> <p class="services-section__service-name">Nutrition</p></li>
-                <li class="swiper-slide services-section__service "><svg width="64" height="64">
-                    <use href="./Images/icons.svg#icon-icon_walk"></use>
-                </svg><p class="services-section__service-name">Training</p></li>
-                <li class="swiper-slide services-section__service "><svg width="64" height="64">
-                    <use href="./Images/icons.svg#icon-icon_wash"></use>
-                </svg><p class="services-section__service-name">Bathing</p></li>
+        <div class="wrapper">
+            <ul class="services-section__categories carousel">
+                <li class="card1 services-section__service "><img src="./Images/icon_groom.svg" alt=""><p class="services-section__service-name">Grooming</p></li>
+                <li class="card1 services-section__service "><img src="./Images/icon_feed.svg" alt=""> <p class="services-section__service-name">Nutrition</p></li>
+                <li class="card1 services-section__service "><img src="./Images/icon_walk.svg" alt=""><p class="services-section__service-name">Training</p></li>
+                <li class="card1 services-section__service "><img src="./Images/icon_wash.svg" alt=""><p class="services-section__service-name">Bathing</p></li>
+                <li class="card1 services-section__service "><img src="./Images/icon_groom.svg" alt=""><p class="services-section__service-name">Grooming</p></li>
+                <li class="card1 services-section__service "><img src="./Images/icon_feed.svg" alt=""> <p class="services-section__service-name">Nutrition</p></li>
             </ul>
             <div class="swiper-button-next2">
                 <p class="services-section__more">more services</p>
                 <div class="services-section__arrow"><img src="/Images/Arrow 1.svg" alt=""></div>
             </div>
-            <div class="services-section__icon"><svg width="128" height="128">
-                <use href="./Images/icons.svg#icon-arrow"></use>
-            </svg></div>
+            <div class="services-section__icon"><img src="./Images/arrow.svg" alt=""></div>
         </div>
         <img class="services-section__BackgroundVector" src="/Images/BackgroundVector 1.png" alt="">
     </div>
-    </section> -->
+    </section>
     <section class="section customers-section" id="customers">
         <div class="container ">
         <h2 class="section-titles centered customers-section__title">Happy customer</h2>
-        <div class="customers-section__container">
-            <button class="swiper-button-prev swiper-button-prev1"><svg width="16" height="16">
-                <use href="./Images/icons.svg#icon-Arrow_button"></use>
-            </svg></button>
-           <div class="swiper swiper1 mySwiper1">
-            <ul class="customers-section__customers swiper-wrapper swiper-wrapper1">
-                <li class="customers-section__customer swiper-slide swiper-slide1"><img class="customers-section__photo" src="./Images/Customer1.jpg" alt="">
+        <div class="customers-section__wrapper wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="customers-section__customers carousel">
+                <li class="customers-section__customer card"><img class="customers-section__photo" src="./Images/Customer1.jpg" alt="">
                     <div class="customers-section__rectangle"></div>
                     <p class="customers-section__name">Christin & Tom</p>
                     <p class="customers-section__text">Love the overall workout experience!</p>
@@ -215,7 +201,7 @@
                     </ul>
                  
                 </li>
-                <li class="customers-section__customer swiper-slide swiper-slide1"><img class="customers-section__photo" src="./Images/Customer2.jpg" alt=""> 
+                <li class="customers-section__customer card"><img class="customers-section__photo" src="./Images/Customer2.jpg" alt=""> 
                     <div class="customers-section__rectangle"></div>
                     <p class="customers-section__name">Anna & Tobby</p>
                     <p class="customers-section__text">Amazing Products & Delivery on time.</p>
@@ -238,7 +224,7 @@
                         <li class="customers-section__mark">4/5</li>
                     </ul>
                 </li>
-                <li class="customers-section__customer swiper-slide swiper-slide1"><img class="customers-section__photo" src="./Images/Customer3.jpg" alt="">
+                <li class="customers-section__customer card"><img class="customers-section__photo" src="./Images/Customer3.jpg" alt="">
                     <div class="customers-section__rectangle"></div>
                     <p class="customers-section__name">Sindy & Kitch</p>
                     <p class="customers-section__text">Great job with the trainer!</p>
@@ -261,7 +247,7 @@
                         <li class="customers-section__mark">5/5</li>
                     </ul>
                 </li>
-                <li class="customers-section__customer swiper-slide swiper-slide1"><img class="customers-section__photo" src="./Images/Customer1.jpg" alt="">
+                <li class="customers-section__customer card"><img class="customers-section__photo" src="./Images/Customer1.jpg" alt="">
                     <div class="customers-section__rectangle"></div>
                     <p class="customers-section__name">Christin & Tom</p>
                     <p class="customers-section__text">Love the overall workout experience!</p>
@@ -285,7 +271,7 @@
                     </ul>
                  
                 </li>
-                <li class="customers-section__customer swiper-slide swiper-slide1"><img class="customers-section__photo" src="./Images/Customer2.jpg" alt=""> 
+                <li class="customers-section__customer card"><img class="customers-section__photo" src="./Images/Customer2.jpg" alt=""> 
                     <div class="customers-section__rectangle"></div>
                     <p class="customers-section__name">Anna & Tobby</p>
                     <p class="customers-section__text">Amazing Products & Delivery on time.</p>
@@ -308,7 +294,7 @@
                         <li class="customers-section__mark">4/5</li>
                     </ul>
                 </li>
-                <li class="customers-section__customer swiper-slide swiper-slide1"><img class="customers-section__photo" src="./Images/Customer3.jpg" alt="">
+                <li class="customers-section__customer card"><img class="customers-section__photo" src="./Images/Customer3.jpg" alt="">
                     <div class="customers-section__rectangle"></div>
                     <p class="customers-section__name">Sindy & Kitch</p>
                     <p class="customers-section__text">Great job with the trainer!</p>
@@ -332,11 +318,8 @@
                     </ul>
                 </li>
             </ul>
-            <div class="swiper-pagination pagination"></div>
            </div>
-            <button class="swiper-button-next swiper-button-next1"><svg width="16" height="16">
-                <use href="./Images/icons.svg#icon-Arrow_button"></use>
-            </svg></button>
+           <i id="right" class="fa-solid fa-angle-right"></i>
             <div class="customers-section__paw-icons">
                 <svg class="customers-section__paw-icon1" width="150" height="150">
                     <use href="./Images/icons.svg#icon-pawprint_grey"></use>
