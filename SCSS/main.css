@@ -1216,7 +1216,7 @@ input[type=checkbox]:checked {
   }
 }
 .lesstalk-section__paw-icon1, .lesstalk-section__paw-icon2, .lesstalk-section__paw-icon3 {
-  fill: var(--color_secondary_grey);
+  color: var(--color_secondary_grey);
   position: absolute;
 }
 .lesstalk-section__paw-icon1 {
@@ -1232,6 +1232,7 @@ input[type=checkbox]:checked {
 .lesstalk-section__paw-icon2 {
   left: 88px;
   top: 130px;
+  transform: rotate(0deg);
 }
 @media screen and (min-width: 820px) {
   .lesstalk-section__paw-icon2 {

@@ -66,7 +66,7 @@
         
     }
     &__paw-icon1, &__paw-icon2, &__paw-icon3{
-        fill: var(--color_secondary_grey);
+        color: var(--color_secondary_grey);
         position: absolute;
     }
     &__paw-icon1{
@@ -81,6 +81,7 @@
     &__paw-icon2{
         left: 88px;
         top: 130px;
+        transform: rotate(0deg);
         @media screen and (min-width: $bp-tablet){
             left: 250px;
             top: -20px;
