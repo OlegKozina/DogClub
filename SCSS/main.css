@@ -76,6 +76,29 @@ select {
   transform: rotate(-90deg);
 }
 
+.fa-xmark {
+  font-size: 2em;
+}
+.fa-xmark:hover {
+  color: var(--color_primary_orange);
+}
+
+.fa-instagram {
+  font-size: 2em;
+  color: var(--color_primary_orange);
+}
+.fa-instagram:hover {
+  color: var(--color_secondary_orange);
+}
+
+.fa-facebook {
+  font-size: 2em;
+  color: var(--color_primary_orange);
+}
+.fa-facebook:hover {
+  color: var(--color_secondary_orange);
+}
+
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Rowdies";
@@ -486,6 +509,8 @@ select {
 }
 .footer__socials {
   display: flex;
+  margin-top: 20px;
+  margin-left: 10px;
   gap: 16px;
   justify-content: center;
 }

@@ -51,18 +51,16 @@
         <div class="mobile-menu">
             <button class="mobile-menu__button mobile-btn-close" type="button"><svg width="32" height="32"><use href="./Images/icons.svg#icon-close"></use></svg></button>
             <ul class="mobile-menu__nav">
-                <li> <p class="mobile-menu__logo"><svg width="128" height="64">
-                    <use href="./Images/icons.svg#icon-dogclub-logo"></use>
-                </svg></li>
-                <li><a class="link menu-btn-close" href="#lesstalk">Less talk</a></li>
-                <li><a class="link menu-btn-close" href="#services">Services category</a></li>
-                <li><a class="link menu-btn-close" href="#customers">Happy customer</a></li>
-                <li><a class="link menu-btn-close" href="#contacts">Contacts</a></li>
+                <li> <p class="mobile-menu__logo"><i class="fa-solid fa-xmark"></i></li>
+                <li><a class="link mobile-btn-close" href="#lesstalk">Less talk</a></li>
+                <li><a class="link mobile-btn-close" href="#services">Services category</a></li>
+                <li><a class="link mobile-btn-close" href="#customers">Happy customer</a></li>
+                <li><a class="link mobile-btn-close" href="#contacts">Contacts</a></li>
             </ul>
             <address>
                 <ul class="mobile-menu__nav-icons">
-                    <li><a href="https://www.instagram.com/okayne__/" target="_blank"> <svg class="mobile-menu__icon" width="32" height="32"><use href="./Images/icons.svg#icon-instagram"></use></svg> </a></li>
-                    <li><a href="https://www.facebook.com/olliekayne" target="_blank"> <svg class="mobile-menu__icon" width="32" height="32"><use href="./Images/icons.svg#icon-facebook"></use></svg> </a></li>
+                    <li><a href="https://www.instagram.com/okayne__/" target="_blank"> <i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/olliekayne" target="_blank"><i class="fa-brands fa-facebook"></i> </a></li>
                 </ul>
             </address>
         </div>
@@ -75,7 +73,7 @@
                 <div class="hero-section__text">
                     <h1 class="hero-section__title">Taking care for your smart dog</h1>
                     <p class="hero-section__definition">Human–canine bonding is the relationship <br>between dogs and humans</p>
-                    <button class="button" type="button"> Explore more</button>
+                    <a href="#lesstalk"><button class="button" type="button"> Explore more</button></a>
                     
                 </div>
 
@@ -149,7 +147,7 @@
                         Which is why, it’s okay to use an extra hand in walking dogs so they are in perfect shape, 
                         mentally and physically.
                     </p>
-                    <button class="button lesstalk-section__button jQuery_btn" type="button"> Explore more</button>
+                    <a href="#services"><button class="button lesstalk-section__button jQuery_btn" type="button"> Explore more</button></a>
                 </div>
                
             </div>
@@ -386,27 +384,18 @@
     </section>
     <footer class="section footer footer-relative">
         <div class="container footer__container">
-            <div class="footer__icons">
-                <div class="footer__logo-icons"><a class="footer__logo logo1" href="">
-                    <svg width="32" height="32">
-                        <use href="./Images/icons.svg#icon-pawprint_orange"></use>
-                    </svg>
-                  </a>
-            <a class='footer__logo' href="DogSite.html"><svg width="128" height="64">
-                    <use href="./Images/icons.svg#icon-dogclub-logo"></use>
-                </svg>
-            </a></div>
-            <div class="footer__socials"><a class='footer__logo' href="https://www.instagram.com/" target="_blank"><svg width="32" height="32">
-                <use href="./Images/icons.svg#icon-instagram"></use>
-            </svg>
+            <div>
+                <div class="footer__logo-icons">
+                    <i class="fa-solid fa-paw"></i>
+                    <img src="./Images/dogclub-logo.svg" alt="">
+                </div>
+            <div class="footer__socials"><a class='footer__logo' href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
              </a>
-            <a class='footer__logo' href="https://www.facebook.com/" target="_blank"><svg width="32" height="32">
-            <use href="./Images/icons.svg#icon-facebook"></use>
-             </svg>
+            <a class='footer__logo' href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>
              </a></div>
             </div>
             <ul class="footer__menu">
-                <div class="home">&#x40;</div>
+                
                 <li><a class="link" href="#lesstalk">Less talk</a></li>
                 <li><a class="link" href="#services">Services category</a></li>
                 <li><a class="link" href="#customers">Happy customer</a></li>
@@ -430,9 +419,7 @@
     </footer>
     <div class="backdrop is-hidden">
         <div class="modal">
-            <button class="modal__cross-button modal-btn-close" type="button"><svg width="32" height="32">
-                <use href="./Images/icons.svg#icon-close"></use>
-            </svg></button>
+            <button class="modal__cross-button modal-btn-close" type="button"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal__form_margin"></div>
             <h2 class="modal__form-title section-titles">Our experts will take care of your friend</h2>
             <p class="modal__form-instruction">Fill out the form so we can contact you!</p>

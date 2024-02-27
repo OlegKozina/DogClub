@@ -59,6 +59,8 @@
     }
     &__socials{
         display: flex; 
+        margin-top: 20px;
+        margin-left: 10px;
         gap: 16px;
         justify-content: center;
         @media screen and (min-width: $bp-tablet){

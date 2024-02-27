@@ -73,3 +73,25 @@ select {
     font-size: 2em;
     transform: rotate(-90deg);
   }
+
+  .fa-xmark{
+    font-size: 2em;
+    &:hover{
+        color: var(--color_primary_orange);
+    }
+  }
+
+  .fa-instagram{
+    font-size: 2em;
+    color: var(--color_primary_orange);
+    &:hover{
+        color: var(--color_secondary_orange);
+    }
+  }
+  .fa-facebook{
+    font-size: 2em;
+    color: var(--color_primary_orange);
+    &:hover{
+        color: var(--color_secondary_orange);
+    }
+  }
