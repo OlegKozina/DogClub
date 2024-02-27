@@ -1,13 +1,13 @@
 .customers-section{
     
-    &__container{
-        display: flex;
-        align-items: center;
-        gap: 26px;
-        position: relative;
-        max-width: 1200px;
+    // &__container{
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 26px;
+    //     position: relative;
+    //     max-width: 1200px;
         
-    }
+    // }
     &__rectangle{
         position: absolute;
         width: 344px;
@@ -147,6 +147,7 @@
 //     left: 20px !important;
 // }
 .wrapper {
+
     max-width: 1100px;
     width: 100%;
     position: relative;
@@ -169,6 +170,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.23);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
+    z-index: 1;
   }
   .wrapper i:active{
     transform: translateY(-50%) scale(0.85);
@@ -182,7 +184,7 @@
   .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
+    grid-auto-columns: calc((100% / 3));
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 16px;
@@ -211,7 +213,7 @@
   }
   .carousel .card {
     scroll-snap-align: start;
-    height: 444px;
+    height: 546px;
     max-width: 345px;
     list-style: none;
     cursor: pointer;

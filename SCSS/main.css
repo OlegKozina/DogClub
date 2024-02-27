@@ -322,13 +322,6 @@ select {
   fill: var(--color_primary_white);
 }
 
-.customers-section__container {
-  display: flex;
-  align-items: center;
-  gap: 26px;
-  position: relative;
-  max-width: 1200px;
-}
 .customers-section__rectangle {
   position: absolute;
   width: 344px;
@@ -438,6 +431,7 @@ select {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-50%);
   transition: transform 0.1s linear;
+  z-index: 1;
 }
 
 .wrapper i:active {
@@ -455,7 +449,7 @@ select {
 .wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc(33.3333333333% - 12px);
+  grid-auto-columns: 33.3333333333%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 16px;
@@ -492,7 +486,7 @@ select {
 
 .carousel .card {
   scroll-snap-align: start;
-  height: 444px;
+  height: 546px;
   max-width: 345px;
   list-style: none;
   cursor: pointer;
@@ -1481,11 +1475,6 @@ input[type=checkbox]:checked {
   align-items: center;
   background: linear-gradient(0deg, rgb(255, 250, 243) 0%, rgb(255, 250, 243) 35%, rgb(255, 255, 255) 100%);
 }
-.services-section__service-name {
-  color: var(--color_primary_orange);
-  position: relative;
-  bottom: -40px;
-}
 .services-section__more {
   color: var(--color_primary_orange);
   position: relative;
@@ -1511,26 +1500,50 @@ input[type=checkbox]:checked {
   z-index: -1;
 }
 
-.swiper2 {
-  position: relative;
-  left: 212px;
-  max-width: 945px;
-  overflow: hidden;
-}
-@media screen and (min-width: 1280px) {
-  .swiper2 {
-    overflow: visible;
-  }
-}
-
 .swiper-button-next2 {
   position: absolute;
-  right: -250px;
-  bottom: 0px;
-  cursor: pointer;
+  right: 0;
 }
 
-.carousel .card1 {
+.wrapper1 .carousel1 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 33.3333333333%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  position: relative;
+}
+
+.wrapper1 i {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  font-size: 2em;
+  color: var(--color_primary_orange);
+  transform: translateY(-50%);
+}
+
+.wrapper1 p {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+}
+
+.wrapper1 p.services-section__service-name {
+  color: var(--color_primary_orange);
+  position: relative;
+  bottom: -40px;
+}
+
+.wrapper1 i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
+.carousel1 .card1 {
   scroll-snap-align: start;
   height: 444px;
   max-width: 345px;
@@ -1542,7 +1555,19 @@ input[type=checkbox]:checked {
   padding: 24px;
 }
 @media screen and (max-width: 600px) {
-  .carousel .card1 {
+  .carousel1 .card1 {
     scroll-snap-align: center;
+  }
+}
+
+.wrapper1 {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+@media screen and (min-width: 1280px) {
+  .wrapper1 {
+    margin: 0 0 50px 50px;
   }
 }/*# sourceMappingURL=main.css.map */
