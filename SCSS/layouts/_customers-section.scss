@@ -1,22 +1,12 @@
 .customers-section{
     
-    // &__container{
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 26px;
-    //     position: relative;
-    //     max-width: 1200px;
-        
-    // }
+
     &__rectangle{
         position: absolute;
-        width: 344px;
-      
+        width: 343px;
         height: 130px;
- 
         background-color: var(--color_secondary_grey);
         border-radius:0 0 24px 24px;
-       
         overflow-y: auto;
         bottom: 75px;
         
@@ -28,15 +18,6 @@
         }
  }
 
-
-    &__customer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
-    }
     &__photo{
         border-radius: 24px;
         
@@ -56,7 +37,6 @@
     }
     &__icons{
         display: flex;
-        
         gap: 8px;
         fill: var(--color_primary_orange);
         position: relative;
@@ -72,80 +52,34 @@
         position: relative;
         left: 40px;
     }
-    &__paw-icon1, &__paw-icon2, &__paw-icon3 {
-        position: absolute;
-        fill: var(--color_secondary_white);
+    // &__paw-icon1, &__paw-icon2, &__paw-icon3 {
+    //     position: absolute;
+    //     fill: var(--color_secondary_white);
        
-    }
-    &__paw-icon1{
-        left: 0;
-        z-index: -1;
-        top: -150px;
-        transform: rotate(45deg);
-    }
-    &__paw-icon2{
-        left: -200px;
-        bottom: -50px;
-        transform: rotate(45deg);
-    }
-    &__paw-icon3{
-        display: none;
-        @media screen and (min-width: $bp-desktop){
-            display: block;
-            right: 12px;
-            top: -253px;
-            transform: rotate(-45deg);
-        }
+    // }
+    // &__paw-icon1{
+    //     left: 0;
+    //     z-index: -1;
+    //     top: -150px;
+    //     transform: rotate(45deg);
+    // }
+    // &__paw-icon2{
+    //     left: -200px;
+    //     bottom: -50px;
+    //     transform: rotate(45deg);
+    // }
+    // &__paw-icon3{
+    //     display: none;
+    //     @media screen and (min-width: $bp-desktop){
+    //         display: block;
+    //         right: 12px;
+    //         top: -253px;
+    //         transform: rotate(-45deg);
+    //     }
  
-    }
+    // }
     
 }
-// .swiper-wrapper1{
-//    z-index: 0 !important;
-  
-// }
-// // .swiper {
-// //     width: 1200px;
-// //     height: 90%;
-// //   }
-// .swiper1 {
-//     margin-left: auto;
-//     margin-right: auto;
-//     max-width: 400px;
-
-//     @media screen and (min-width: $bp-tablet){
-//     max-width: 780px;
-//     }
-
-    
-//     @media screen and (min-width: $bp-desktop){
-//         max-width: 1160px;
-//     }
-//   }
-
-//   .swiper-slide1 {
-//     text-align: center;
-//     font-size: 18px;
-//     background-color: #fff;
-//     display: flex;
-//     z-index: 0 !important;
-//     // flex-shrink: 0;
-//     ;
-//     align-items: center;
-//   }
-//   .swiper-slide1 img {
-//     display: block;
-//     max-width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//   }
-//   .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-//     bottom: 0px !important;
-// }
-
-// .pagination{
-//     left: 20px !important;
-// }
 .wrapper {
 
     max-width: 1100px;
@@ -184,7 +118,7 @@
   .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3));
+    grid-auto-columns: calc((100% / 3) - 0px);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 16px;
@@ -212,15 +146,19 @@
     align-items: left;
   }
   .carousel .card {
+    display: flex;
+    flex-direction: column;
+
+    // align-items: center;
+    position: relative;
     scroll-snap-align: start;
-    height: 546px;
+    // height: 546px;
     max-width: 345px;
     list-style: none;
     cursor: pointer;
     padding-bottom: 15px;
-    flex-direction: column;
     border-radius: 8px;
-    padding: 24px;
+    padding: 12px;
     justify-content: flex-end;
     @media screen and (max-width: 600px){
       scroll-snap-align: center;
@@ -249,9 +187,9 @@
     color: #6A6D78;
     font-size: 1.31rem;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 820px) {
     .wrapper .carousel {
-      grid-auto-columns: calc((100% / 2) - 9px);
+      grid-auto-columns: calc((100% / 2) - -5px);
     }
   }
   @media screen and (max-width: 600px) {
@@ -265,3 +203,4 @@
     color: white;
     text-align:end left;
   }
+

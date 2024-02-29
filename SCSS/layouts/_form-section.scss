@@ -79,6 +79,8 @@
         background-color: transparent;
         font-size: 16px;
         line-height: 1.17;
+        position: relative;
+        z-index: 1;
        
        
         &::placeholder{
