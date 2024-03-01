@@ -1,126 +1,113 @@
-.backdrop{
-    position: fixed;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color:rgba(0, 0, 0, 0.5);
-    padding: 20px 0;
-    transition: opacity 1s, visibility 1s;
-    
-
-
+.backdrop {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  transition: opacity 1s, visibility 1s;
 }
-.is-hidden{
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
-.modal{
-    margin-top: 72px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
+.modal {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+
+  width: 100%;
+  max-width: 750px;
+  height: 100%;
+  max-height: 700px;
+  background-color: var(--color_secondary_white);
+  border-radius: 32px;
+  padding: 120px 86px 86px;
+
+  &__cross-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+  }
+  &__form-title {
+    text-align: center;
+    font-size: 56px;
+    margin: 0;
+    max-width: 605px;
     position: relative;
-    
-    width: 100%;
-    max-width: 750px;
-    height: 100%;
-    max-height: 700px;
-    background-color: var(--color_secondary_white);
-    border-radius: 32px;
-    padding: 120px 86px 86px;
-
- 
- 
-    &__cross-button{
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        position: absolute;
-        right: 40px;
-        top: 40px;
-    }
-    &__form-title{
-        text-align: center;
-        font-size: 56px;
-        margin: 0;
-        max-width: 605px;
-        position: relative;
-        
-    }
-    &__form-instruction{
-        text-align: center;
-        color: var(--color_secondary_grey);
-        margin: 20px;
-    }
-    &__form{
-        text-align: center;
-        
-    }
-    &__form_button{
-        margin-bottom: 10px;
-    }
+  }
+  &__form-instruction {
+    text-align: center;
+    color: var(--color_secondary_grey);
+    margin: 20px;
+  }
+  &__form {
+    text-align: center;
+  }
+  &__form_button {
+    margin-bottom: 10px;
+  }
 }
 
-.form-field{
-    margin-bottom:20px;
-    &__input{
-        padding: 16px 42px;
-        max-width: 310px;
-        border-radius: 17px;
-        border: 1px solid var(--color_primary_orange);  
-        background-color: transparent;
-        font-size: 16px;
-        line-height: 1.17;
-        position: relative;
-        z-index: 1;
-       
-       
-        &::placeholder{
-            color: var(--color_primary_orange);
-            &::before{
-               background-image: url(/Images/basket.svg);
-            }
-        }
-    }
-    
-    &__terms, &__terms-link{
-        
-        font-size: 12px;
-        color: var(--color_secondary_grey);
-        text-align: center;
-    }
-}
-.checkbox{
-
+.form-field {
+  margin-bottom: 20px;
+  &__input {
+    padding: 16px 42px;
+    max-width: 310px;
+    border-radius: 17px;
+    border: 1px solid var(--color_primary_orange);
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.17;
     position: relative;
-    top: 4px;
-    margin-right: 11px;
+    z-index: 1;
+
+    &::placeholder {
+      color: var(--color_primary_orange);
+      &::before {
+        background-image: url(/Images/basket.svg);
+      }
+    }
+  }
+
+  &__terms,
+  &__terms-link {
+    font-size: 12px;
+    color: var(--color_secondary_grey);
+    text-align: center;
+  }
+}
+.checkbox {
+  position: relative;
+  top: 4px;
+  margin-right: 11px;
 }
 input[type="checkbox"] {
-    
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    width: 16px;
-    height: 16px;
-    border: 1px solid var(--color_secondary_grey);
-    
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color_secondary_grey);
 }
 
-  input[type="checkbox"]:checked{
- 
+input[type="checkbox"]:checked {
   background-color: var(--color_secondary_grey);
-  }
+}
 
-
-  .home{
-    color: aqua;
-  }
+.home {
+  color: aqua;
+}

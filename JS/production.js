@@ -1,13 +1,10 @@
-const production = document.querySelector('.production');
-const basket = document.querySelector('.production-open');
-const close = document.querySelector('.production-btn-close');
+const production = document.querySelector(".production");
+const basket = document.querySelector(".production-open");
+const close = document.querySelector(".production-btn-close");
 
+const toggleProduction = function () {
+  production.classList.toggle("is-hidden");
+};
 
-const toggleProduction = function ()
-{production.classList.toggle('is-hidden');};
-
-
-
-basket.addEventListener('click', toggleProduction);
-close.addEventListener('click', toggleProduction)
-
+basket.addEventListener("click", toggleProduction);
+close.addEventListener("click", toggleProduction);

@@ -1,123 +1,107 @@
-.footer{
- 
+.footer {
+  bottom: 67px;
+  left: 365px;
+
+  padding: 10px 313px 10px 105px;
+  background-color: var(--color_secondary_white);
+  @media screen and (min-width: $bp-desktop) {
     bottom: 67px;
-    left: 365px; 
-    // z-index: 4;
+    left: 365px;
     padding: 10px 313px 10px 105px;
-    background-color: var(--color_secondary_white);
-    @media screen and (min-width: $bp-desktop){
-        bottom: 67px;
-        left: 365px; 
-        padding: 10px 313px 10px 105px;
-    }
-   
-    // margin-bottom: 40px;
+  }
 
-    &.footer-relative{
-        position: relative;
-        left: 0;
-        bottom: -30px;
-        padding: 20px 0px 20px 0px;
-        @media screen and (min-width: $bp-desktop){
-            &::after{
-                right: 180px;
-            }
-        }
-      
+  &.footer-relative {
+    position: relative;
+    left: 0;
+    bottom: -30px;
+    padding: 20px 0px 20px 0px;
+    @media screen and (min-width: $bp-desktop) {
+      &::after {
+        right: 180px;
+      }
     }
+  }
 
+  &__container {
+    display: block;
+    text-align: center;
+    gap: 100px;
 
-    
-    &__container{
-        display: block;
-        text-align: center;
-        gap:100px;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 100px;
+    }
+    @media screen and (min-width: $bp-tablet) {
+    }
+  }
+  &__icons {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo-icons {
+    display: flex;
 
-        @media screen and (min-width: $bp-tablet){
-            display: flex;
-            gap:100px;
-        }
-        @media screen and (min-width: $bp-tablet){
-            
-        }
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: flex-start;
     }
-    &__icons{
-        display: flex;
-        flex-direction: column;
-       
+  }
+  &__logo {
+    fill: var(--color_primary_orange);
+    margin: 0;
+    padding: 0;
+  }
+  &__socials {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+    gap: 16px;
+    justify-content: center;
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: flex-start;
+    }
+  }
 
-    }
-    &__logo-icons{
-        display: flex;
-        
-        align-items: center;
-        justify-content: center;
-        @media screen and (min-width: $bp-tablet){
-            justify-content: flex-start;
-        }
-    }
-    &__logo{
-        fill: var(--color_primary_orange);
-        margin: 0;
-        padding: 0;
-        
-    }
-    &__socials{
-        display: flex; 
-        margin-top: 20px;
-        margin-left: 10px;
-        gap: 16px;
-        justify-content: center;
-        @media screen and (min-width: $bp-tablet){
-            justify-content: flex-start;
-        }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1;
+    padding-left: 0;
+  }
 
-    }
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__form_button {
+    margin: 0;
+    padding: 16 32;
+  }
+  &__form_div {
+    z-index: 1;
+  }
+  &__after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
 
-    &__menu{
-        display: flex; 
-        flex-direction: column;
-        gap: 16px;
-        z-index: 1;
-        padding-left: 0;
-    }
+    bottom: 496px;
+    right: 0px;
+    width: 292px;
+    height: 305px;
 
-    &__form{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        
-    
+    @media screen and (min-width: $bp-tablet) {
+      bottom: 215px;
+      z-index: 0;
     }
-    &__form_button{
-        margin: 0;
-        padding: 16 32;
+    @media screen and (min-width: $bp-desktop) {
+      bottom: -45px;
+      right: 280px;
+      z-index: 0;
     }
-    &__form_div{
-        z-index: 1;
-    }
-    &__after{
-        position:absolute;
-        content: '';
-        background-repeat: no-repeat;
-        
-        bottom: 496px;
-        right: 0px; 
-        width: 292px;
-        height:305px;
-    
-        @media screen and (min-width: $bp-tablet){
-            bottom: 215px;
-            z-index: 0;
-        }
-        @media screen and (min-width: $bp-desktop){
-            bottom: -45px;
-            right: 280px;
-            z-index: 0;
-
-
-        }
-
-    }
+  }
 }

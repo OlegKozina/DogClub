@@ -1,60 +1,53 @@
-.mobile-menu{
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0; 
-    width: 100%;
-    height: 100%;
-    background-color: var(--color_primary_white);
+.mobile-menu {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color_primary_white);
 
-    transform: translateX(100%);
-    transition: transform 0.5s;
+  transform: translateX(100%);
+  transition: transform 0.5s;
 
-    &.is-open{
-        transform: translateX(0);
-      
-
+  &.is-open {
+    transform: translateX(0);
+  }
+  &__logo {
+    margin: 20px 0;
+    fill: var(--color_primary_orange);
+  }
+  &__button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 46px;
+    right: 55px;
+    fill: var(--color_primary_orange);
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+  }
+  &__link {
+    text-decoration: none;
+    color: var(--color_primarydark);
+    &:hover {
+      color: var(--colorb);
     }
-    &__logo{
-        margin: 20px 0;
-        fill: var(--color_primary_orange);
-      
+  }
+  &__nav-icons {
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  &__icon {
+    fill: var(--color_primary_orange);
+    &:hover {
+      fill: var(--color_secondary_orange);
+      cursor: pointer;
     }
-    &__button{
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        top: 46px;
-        right: 55px;
-        fill: var(--color_primary_orange);
-    }
-    &__nav{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        margin: 20px;
-        
-       
-    }
-    &__link{
-        text-decoration: none;
-        color: var(--color_primarydark);
-        &:hover{
-            color: var(--colorb);
-            
-        }
-    }
-    &__nav-icons{
-        margin-left: 20px;
-        display: flex;
-        gap: 20px;
-    }
-    &__icon{
-        fill: var(--color_primary_orange);
-        &:hover{
-            fill: var(--color_secondary_orange);
-            cursor: pointer;
-        }
-    }
-
+  }
 }

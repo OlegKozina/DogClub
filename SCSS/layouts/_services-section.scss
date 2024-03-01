@@ -1,50 +1,43 @@
-.services-section{
-    // overflow-x: hidden;
-    position: relative;
-    &__icon{
-        position: absolute;
-        // right: 214px;
-        fill: var(--color_primary_orange);
-        // top: -151px;
-        
-    }
-&__categories{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+.services-section {
+  position: relative;
+  &__icon {
+    position: absolute;
+
+    fill: var(--color_primary_orange);
+  }
+  &__categories {
     gap: 24px;
-    // flex-wrap: wrap;
-    // position: relative;
-}
-&__title{
+  }
+  &__title {
     font-size: 32px;
-    @media screen and (min-width: $bp-desktop){
-        font-size: 56px;
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 56px;
     }
-}
+  }
 
-&__service{
+  &__service {
     border: 1px solid lightgray;
-        border-radius: 32px;
-        height: 245px !important;
-        // width: 250px !important;
-        display: flex !important;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(0deg, rgba(255,250,243,1) 0%, rgba(255,250,243,1) 35%, rgba(255,255,255,1) 100%);;
+    border-radius: 32px;
+    height: 245px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 250, 243, 1) 0%,
+      rgba(255, 250, 243, 1) 35%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
 
-}
-
-
-&__more{
+  &__more {
     color: var(--color_primary_orange);
     position: relative;
     bottom: -80px;
     font-size: 18px;
-    
-}
-&__BackgroundVector{
+  }
+  &__BackgroundVector {
     position: absolute;
     top: 0px;
     left: 0;
@@ -53,81 +46,79 @@
     width: 100%;
     max-height: 500px;
     overflow: hidden;
-}
-&__arrow{
+  }
+  &__arrow {
     position: relative;
     bottom: -83px;
     left: -24px;
-    
-}
-&__icon{
+  }
+  &__icon {
     z-index: -1;
-}
-}
-.swiper-button-next2{
-position: absolute;
-right: 0;
-}
-
-.wrapper1 .carousel1{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3));
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 16px;
-    border-radius: 8px;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    position: relative;
   }
-
-  .wrapper1 i{
-    position: absolute;
-    right: 0;
-    cursor: pointer;
-    font-size: 2em;
-    color: var(--color_primary_orange);
-    transform: translateY(-50%);
-  }
-  .wrapper1 p{
-    position: absolute;
-    right: 0;
-    bottom: -60px;
-  }
-
-  .wrapper1 p.services-section__service-name{
-    color: var(--color_primary_orange);
-    position: relative;
-    bottom: -40px;
-
+}
+.swiper-button-next2 {
+  position: absolute;
+  right: 0;
 }
 
-  .wrapper1 i:active{
-    transform: translateY(-50%) scale(0.85);
-  }
+.wrapper1 .carousel1 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3));
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  position: relative;
+}
+
+.wrapper1 i {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  font-size: 2em;
+  color: var(--color_primary_orange);
+  transform: translateY(-50%);
+}
+.wrapper1 p {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+}
+
+.wrapper1 p.services-section__service-name {
+  color: var(--color_primary_orange);
+  position: relative;
+  bottom: -40px;
+}
+
+.wrapper1 i:active {
+  transform: translateY(-50%) scale(0.85);
+}
 
 .carousel1 .card1 {
-    scroll-snap-align: start;
-    height: 444px;
-    max-width: 345px;
-    list-style: none;
-    cursor: pointer;
-    padding-bottom: 15px;
-    flex-direction: column;
-    border-radius: 8px;
-    padding: 24px;
+  scroll-snap-align: start;
+  height: 444px;
+  max-width: 345px;
+  list-style: none;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
 
-    @media screen and (max-width: 600px){
-      scroll-snap-align: center;
-    }}
-    .wrapper1 {
-
-        max-width: 1100px;
-        width: 100%;
-        position: relative;
-        margin: 0;
-        @media screen and (min-width: $bp-desktop){
-          margin: 0 0 50px 50px;
-        }
-      }
+  @media screen and (max-width: 600px) {
+    scroll-snap-align: center;
+  }
+}
+.wrapper1 {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  @media screen and (min-width: $bp-desktop) {
+    margin: 0 0 50px 50px;
+  }
+}

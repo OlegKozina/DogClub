@@ -1,101 +1,96 @@
-.contacts-section{
-position: relative;
-z-index: 0;
-margin-bottom: 150px; 
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,243,255,1) 65%, rgba(241,243,255,1) 100%);
-@media screen and (min-width: $bp-tablet){
-    margin-bottom:0px; 
+.contacts-section {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 150px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(241, 243, 255, 1) 65%,
+    rgba(241, 243, 255, 1) 100%
+  );
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 0px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 0;
+    z-index: 1;
+    font-size: 32px;
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 56px;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  &__form_button {
+    margin: 0;
+  }
+  &__form-field {
+    border-radius: 17px;
+    border-color: var(--color_primary_orange);
+    padding: 8px 40px;
+  }
+  &__input {
+    font-size: 18px;
+  }
+  &__form-instruction {
+    text-align: center;
+    color: var(--color_secondary_grey);
+    margin: 20px;
+    z-index: 1;
+  }
+
+  &__before {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 353px;
+      height: 520px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+    }
+  }
+  &__after {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+      bottom: 0px;
+      right: 0;
+      width: 322px;
+      height: 752px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+    }
+  }
+  .wave svg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    fill: var(--color_primary_white);
+  }
 }
-    &__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    &__title{
-        margin-bottom: 0;
-        z-index: 1;
-        font-size: 32px;
-        @media screen and (min-width: $bp-desktop){
-        font-size: 56px;
-        }
-
-    }
-    &__form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 24px;
-
-    }
-    &__form_button{
-        margin: 0;
-  
-    }
-    &__form-field{
-        border-radius: 17px;
-        border-color: var(--color_primary_orange);
-        padding: 8px 40px;
-
-    }
-    &__input{
-        font-size: 18px;
-
-    }
-    &__form-instruction{
-        text-align: center;
-        color: var(--color_secondary_grey);
-        margin: 20px;
-        z-index: 1;
-    }
-
-    &__before{
-        display: none;
-        @media screen and (min-width: $bp-tablet){
-            display: block;
-            
-            position:absolute;
-            content: '';
-            background-repeat: no-repeat;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            width: 353px;
-            height:520px;
-        }
-        @media screen and (min-width: $bp-desktop){
-
-        }
-    }
-    &__after{
-        display: none;
-        @media screen and (min-width: $bp-tablet){
-            display: block;
-       
-        position:absolute;
-        content: '';
-        background-repeat: no-repeat;
-        bottom: 0px;
-        right: 0;
-        width: 322px;
-        height:752px;
-    
-
-    }
-        @media screen and (min-width: $bp-desktop){
-
-        }
-    }
-    .wave svg{
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        fill: var(--color_primary_white);
-    }
-}
-

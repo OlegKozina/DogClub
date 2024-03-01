@@ -1,118 +1,107 @@
-.header{
- 
+.header {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  padding: 0 0px;
+  width: 100%;
+
+  background-color: var(--color_primary_white);
+  &__logos {
+    display: flex;
+    margin-left: 108px;
+  }
+
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+  &__burger {
+    background-color: transparent;
+    border: none;
+    fill: var(--color_primary_orange);
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+  &__logo {
+    fill: var(--color_primary_orange);
+    display: flex;
+    align-items: center;
+  }
+  &__logos {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  &__container {
+    display: flex;
+    gap: 80px;
     position: relative;
-   left: 0px;
-   top: 0px;
-   padding: 0 0px;
-   width: 100%;
- 
+    justify-content: space-between;
+    @media screen and (min-width: $bp-desktop) {
+      flex-grow: 0;
+    }
+  }
 
-   background-color: var(--color_primary_white);
-//    z-index: 4;
-    &__logos{
-        display: flex;
-        margin-left: 108px;
+  &__menu {
+    padding-left: 0;
+    display: none;
+    gap: 48px;
+    align-items: center;
+    z-index: 2;
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
     }
+  }
+  &__buttons {
+    display: flex;
+    gap: 0px;
+    @media screen and (min-width: $bp-mobile) {
+      gap: 24px;
+    }
+  }
+  &__basket {
+    fill: var(--color_primary_orange);
+    border: none;
+    font-size: 2em;
+    color: var(--color_primary_orange);
+    background-color: transparent;
+    z-index: 0;
+    &:hover {
+      color: var(--color_secondary_orange);
+      cursor: pointer;
+    }
+  }
 
-    &__button {
-        display: none;
-        @media screen and (min-width: $bp-desktop){
-            display: block;
-        }
-
-    }
-    &__burger{
-        background-color: transparent;
-        // margin: 20px 20px;
-        border: none;
-        fill: var(--color_primary_orange);
-        @media screen and (min-width: $bp-desktop){
-            display: none;
-        }
-    }
-    &__logo{
-        fill: var(--color_primary_orange);
-        display: flex;
-        align-items: center;
-    }
-    &__logos{
-        gap: 10px;
-        display: flex;
-        align-items: center;
-        margin-left: 20px;
-    }
-    &__container{
-        display: flex;
-        gap: 80px;
-        position: relative;
-        justify-content: space-between;
-        @media screen and (min-width: $bp-desktop){
-            flex-grow: 0;
-        }
-   
-    }
-
-    &__menu{
-        padding-left: 0;
-        display: none;
-        gap: 48px;
-        align-items: center;
-        z-index: 2;
-        @media screen and (min-width: $bp-desktop){
-            display: flex;
-        }
-    }
-    &__buttons{
-        display: flex;
-        gap:0px;
-        @media screen and (min-width: $bp-mobile){
-            gap: 24px;
-        }
-   
-    
-    }
-    &__basket{
-        fill: var(--color_primary_orange);
-        border: none;
-        font-size: 2em;
-        color: var(--color_primary_orange);
-        background-color: transparent;
-        z-index: 0;
-        &:hover{
-            color: var(--color_secondary_orange);
-            cursor: pointer;
-        }
-      
+  &__icon1,
+  &__icon2 {
+    position: absolute;
+    z-index: -1;
+  }
+  &__icon1 {
+    transform: rotate(-45deg);
+    font-size: 5em;
+    top: 0px;
+    right: 747px;
+    color: var(--color_secondary_white);
+  }
+  &__icon2 {
+    transform: rotate(45deg);
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 5em;
+      right: -241px;
+      top: -56px;
+      display: block;
+      color: var(--color_secondary_white);
     }
 
-
-    &__icon1, &__icon2{
-        position: absolute;
-        z-index: -1;
+    @media screen and (min-width: $bp-desktop) {
+      right: 375px;
+      top: -16px;
     }
-    &__icon1{
-        transform: rotate(-45deg);
-        font-size: 5em;
-        top: 0px;
-        right: 747px; 
-        color: var(--color_secondary_white);
-    }
-    &__icon2{
-        transform: rotate(45deg);
-        display: none;
-        @media screen and (min-width: $bp-tablet){
-            font-size: 5em;
-            right: -241px;
-            top: -56px ;
-            display: block;
-            color: var(--color_secondary_white);
-        }
-       
-        @media screen and (min-width: $bp-desktop){
-            right: 375px;
-            top: -16px;
-           
-        }
- 
-    }
+  }
 }

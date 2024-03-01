@@ -1,64 +1,58 @@
-.button{
-    padding: 16px 32px;
-    // max-width: 200px;
-    background-color: var(--color_primary_orange);
-    border-radius: 8px;
-    color: var(--color_primary_white);
-    border: none;
-    cursor: pointer;
-    margin: 20px 0;
-    &:hover{
-        background-color: var(--color_secondary_orange);
-        color: var(--color_secondary_white);
+.button {
+  padding: 16px 32px;
+  background-color: var(--color_primary_orange);
+  border-radius: 8px;
+  color: var(--color_primary_white);
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+  &:hover {
+    background-color: var(--color_secondary_orange);
+    color: var(--color_secondary_white);
+  }
+}
+
+.swiper-button-next1,
+.swiper-button-prev1 {
+  background-color: var(--color_secondary_grey);
+  border: none;
+  fill: var(--color_primary_white);
+  border-radius: 50%;
+  height: 32px !important;
+  width: 32px !important;
+  width: calc(var(--swiper-navigation-size) / 34 * 27);
+  display: none !important;
+  @media screen and (min-width: $bp-desktop) {
+    z-index: 11 !important;
+    display: block !important;
+  }
+}
+
+.swiper-button-next1,
+.swiper-rtl .swiper-button-prev1 {
+  right: 0px !important;
+  left: auto;
+}
+.swiper-button-prev1,
+.swiper-rtl .swiper-button-next1 {
+  left: 0px !important;
+  right: auto;
+}
+.swiper-button-next1:after,
+.swiper-button-prev1:after {
+  display: none !important;
+  background-color: var(--color_secondary_grey);
+}
+
+.swiper-button-next1 {
+  display: none !important;
+  transform: rotate(180deg);
+  @media screen and (min-width: $bp-desktop) {
+    display: block !important;
+  }
+
+  .swiper-button-prev1 {
+    @media screen and (min-width: $bp-desktop) {
     }
-}
-
-.swiper-button-next1, .swiper-button-prev1{
-    
-    background-color: var(--color_secondary_grey);
-    border: none;
-    fill: var(--color_primary_white);
-    border-radius: 50%;
-    height: 32px !important;
-    width: 32px !important;
-    width: calc(var(--swiper-navigation-size)/ 34 * 27);
-    display: none !important;
-    // z-index: 0 !important;
-    @media screen and (min-width: $bp-desktop){
-        z-index: 11 !important;
-
-        display: block !important;
-    }
-}
-
-
-
-.swiper-button-next1, .swiper-rtl .swiper-button-prev1{
-    right: 0px !important;
-    left: auto;
-    
-}
-.swiper-button-prev1, .swiper-rtl .swiper-button-next1{
-    left: 0px !important;
-    right: auto;
-}
-.swiper-button-next1:after, .swiper-button-prev1:after {
-display: none !important;
-background-color: var(--color_secondary_grey);
-
-}
-
-.swiper-button-next1{
-    display: none !important;
-    transform: rotate(180deg);
-    @media screen and (min-width: $bp-desktop){
-        display: block !important;
-    }
-
-.swiper-button-prev1{
-   
-    @media screen and (min-width: $bp-desktop){
-      
-    }
-}
+  }
 }

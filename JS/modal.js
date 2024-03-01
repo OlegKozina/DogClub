@@ -1,20 +1,9 @@
-// const modal = document.querySelector('.backdrop');
-// const modalBtnOpen = document.querySelector('.modal-btn-open');
-// const modalBtnClose = document.querySelector('.modal-btn-close');
+$(function () {
+  $(".modal-btn-open").click(function () {
+    $(".backdrop").toggleClass("is-hidden");
+  });
 
-// const toggleModal = () => modal.classList.toggle('is-hidden');
-
-// modalBtnOpen.addEventListener('click', toggleModal);
-// modalBtnClose.addEventListener('click', toggleModal);
-
-$(function(){
-
-    $('.modal-btn-open').click(function(){
-        $('.backdrop').toggleClass('is-hidden') 
-    })
-
-    $('.modal-btn-close').click(function(){
-        $('.backdrop').toggleClass('is-hidden') 
-    })
-
-})
+  $(".modal-btn-close").click(function () {
+    $(".backdrop").toggleClass("is-hidden");
+  });
+});

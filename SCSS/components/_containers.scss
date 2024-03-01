@@ -1,9 +1,8 @@
-.container{
-    width: 100%;
-    max-width: 768px;
-    margin: 0 auto;
-    @media screen and (min-width: $bp-tablet){
-        max-width: 1288px;
-    }
-    
+.container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 1288px;
+  }
 }

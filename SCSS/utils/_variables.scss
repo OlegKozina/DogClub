@@ -2,17 +2,15 @@ $bp-mobile: 480px;
 $bp-tablet: 820px;
 $bp-desktop: 1280px;
 
+:root {
+  --color_primary_white: #ffffff;
+  --color_primary_orange: #ff9f0e;
+  --color_primary_black: #181817;
 
-
-:root{
-    --color_primary_white: #FFFFFF;
-    --color_primary_orange: #FF9F0E;
-    --color_primary_black: #181817;
-
-    --color_secondary_orange:#FCB62A;
-    --color_secondary_white:#FFFAF3;
-    --color_secondary_middlepurple:#F1F3FF;
-    --color_secondary_grey:#839AA9;
-    --color_secondary_lightpurple:#F9F9FF;
-    --color_secondary_purple:#D9A6FF;
+  --color_secondary_orange: #fcb62a;
+  --color_secondary_white: #fffaf3;
+  --color_secondary_middlepurple: #f1f3ff;
+  --color_secondary_grey: #839aa9;
+  --color_secondary_lightpurple: #f9f9ff;
+  --color_secondary_purple: #d9a6ff;
 }
