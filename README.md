@@ -20,8 +20,7 @@ Includes logo with social media buttons, site navigation and short contact form.
 
 Added adaptive design to each section.
 
-An easy way to browse the site is by using github preview: https://htmlpreview.github.io/?https://github.com/OlegKozina/DogSite/blob/main/index.html
-
+An easy way to browse the site is by following the link: https://olegkozina.github.io/DogSite/
 
 
 
