@@ -29,8 +29,11 @@
   max-height: 700px;
   background-color: var(--color_primary_white);
 
-  padding: 60px 86px 86px;
+  padding: 60px 20px 20px;
   overflow: scroll;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 60px 86px 86px;
+  }
 
   &__nav {
     display: flex;
