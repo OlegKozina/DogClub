@@ -1,5 +1,12 @@
 .hero-section {
   position: relative;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 149px;
+  }
+
   &__BackgroundVector {
     position: absolute;
     top: -100px;
@@ -17,12 +24,6 @@
       width: 150%;
       left: -450px;
     }
-  }
-  margin-top: 30px;
-  margin-bottom: 150px;
-  position: relative;
-  @media screen and (min-width: $bp-tablet) {
-    margin-bottom: 149px;
   }
 
   &__icons {
@@ -50,9 +51,14 @@
   &__icon4,
   &__icon5,
   &__icon6 {
-    position: absolute;
-    font-size: 4em;
-    z-index: 0;
+    display: none !important;
+    @media screen and (min-width: 500px) {
+      display: block !important;
+      position: absolute;
+      font-size: 4em;
+      z-index: 0;
+    }
+
     @media screen and (min-width: $bp-tablet) {
       z-index: 1;
     }
@@ -137,8 +143,13 @@
   }
   &__dog-icon2,
   &__dog-icon1 {
-    position: absolute;
-    border-radius: 50%;
+    display: none;
+
+    @media screen and (min-width: 500px) {
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+    }
   }
   &__dog-icon1 {
     top: 51px;

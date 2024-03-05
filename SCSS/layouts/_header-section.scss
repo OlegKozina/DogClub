@@ -38,10 +38,11 @@
   }
   &__container {
     display: flex;
-    gap: 80px;
+    gap: 20px;
     position: relative;
     justify-content: space-between;
     @media screen and (min-width: $bp-desktop) {
+      gap: 80px;
       flex-grow: 0;
     }
   }

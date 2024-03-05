@@ -1,5 +1,8 @@
 .services-section {
   position: relative;
+  @media screen and (max-width: $bp-mobile) {
+    padding-top: 0px;
+  }
   &__icon {
     position: absolute;
 
@@ -120,5 +123,16 @@
   margin: 0;
   @media screen and (min-width: $bp-desktop) {
     margin: 0 0 50px 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper1 .carousel1 {
+    grid-auto-columns: calc((100% / 2) + 6px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper1 .carousel1 {
+    grid-auto-columns: 105%;
   }
 }
