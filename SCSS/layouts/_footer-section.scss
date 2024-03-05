@@ -1,7 +1,6 @@
 .footer {
   bottom: 67px;
   left: 365px;
-
   padding: 10px 313px 10px 105px;
   background-color: var(--color_secondary_white);
   @media screen and (min-width: $bp-desktop) {
@@ -40,7 +39,6 @@
   }
   &__logo-icons {
     display: flex;
-
     align-items: center;
     justify-content: center;
     @media screen and (min-width: $bp-tablet) {
