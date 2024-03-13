@@ -1,6 +1,9 @@
 # Dog Site
 
-Site created for a dog daycare company. Includes 4 parts.
+the site was created for a dog daycare company. Includes 4 parts.
+
+**Web stack: HTML5, CSS3, Javascript, jQuery**
+*To work with this website, ensure you have the watch-sass compiler installed for Sass compilation and use a live server for optimal development experience.*
 
 ### Part 1 Header
 
@@ -11,7 +14,7 @@ Includes items with their ratings, information and 'buy' buttons. Items can be s
 
 ### Part 3 Main
 
-Includes 5 section with different information and functionality in each. Some sections have sliders (service-section and customers-section), which can be operated using interface buttons or mouse (touchpad). 'Explore more' buttons move the viewport to the following section. Last section inclused contact form and submit button.
+Includes 5 sections with different information and functionality in each. Some sections have sliders (service-section and customers-section), which can be operated using interface buttons or mouse (touchpad). 'Explore more' buttons move the viewport to the following section. Last section inclused contact form and submit button.
 
 ### Part 4 Footer
 
