@@ -2,8 +2,8 @@
 
 the site was created for a dog daycare company. Includes 4 parts.
 
-**Web stack: HTML5, CSS3, Javascript, jQuery**
-*To work with this website, ensure you have the watch-sass compiler installed for Sass compilation and use a live server for optimal development experience.*
+**Web stack: HTML5, CSS3, Javascript, jQuery, VS Code**
+*To work with this website, ensure you have the **Live sass compiler** installed for Sass compilation and use a **Live server** for optimal development experience.*
 
 ### Part 1 Header
 
