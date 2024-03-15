@@ -1,7 +1,8 @@
+//Add selectors to products-list class and select class from production section
 let field = document.querySelector(".products-list");
 let li = Array.from(field.children);
 let select = document.getElementById("select");
-
+//Creating an array and putting all products prices to the array
 let ar = [];
 
 for (let i of li) {
@@ -12,6 +13,7 @@ for (let i of li) {
   ar.push(i);
 }
 
+//Adding functions to sort elements according to price
 select.onchange = sortingValue;
 
 function sortingValue() {
@@ -28,6 +30,7 @@ function sortingValue() {
     sortElem(field, li, false);
   }
 }
+
 function sortElem(field, li, asc) {
   let dm, sortLi;
   dm = asc ? 1 : -1;

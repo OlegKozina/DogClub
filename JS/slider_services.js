@@ -1,3 +1,4 @@
+//Adding selectors to the slider elements from services section
 const wrapper1 = document.querySelector(".wrapper1");
 const carousel1 = document.querySelector(".carousel1");
 const firstCardWidth1 = carousel1.querySelector(".card1").offsetWidth;
