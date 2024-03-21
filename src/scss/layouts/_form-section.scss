@@ -78,9 +78,9 @@
 
     &::placeholder {
       color: var(--color_primary_orange);
-      &::before {
-        background-image: url(/Images/basket.svg);
-      }
+      // &::before {
+      //   background-image: url("/src/images/basket.svg");
+      // }
     }
   }
 

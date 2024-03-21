@@ -2,8 +2,8 @@
 
 the site was created for a dog daycare company. Includes 4 parts.
 
-**Web stack: HTML5, CSS3, Javascript, jQuery, VS Code**   
-*To work with this website, ensure you have the **Live sass compiler** installed for Sass compilation and use a **Live server** for optimal development experience.*   
+**Web stack: HTML5, CSS3, Javascript, WebPack, VS Code**
+
 **A link to the design pages for this website** https://github.com/OlehKozina/DogSite/tree/main/design%20pages
 
 ### Part 1 Header
@@ -11,7 +11,8 @@ the site was created for a dog daycare company. Includes 4 parts.
 Includes logo and menu navigation with adaptive design for different screens. Chosen navigation button moves a viewport to the chosen section. Also includes buttons which open a production section and a form section.
 
 ### Part 2 Production
-Includes items with their ratings, information and 'buy' buttons. Items can be sorted according to the price. 
+
+Includes items with their ratings, information and 'buy' buttons. Items can be sorted according to the price.
 
 ### Part 3 Main
 
@@ -21,10 +22,6 @@ Includes 5 sections with different information and functionality in each. Some s
 
 Includes logo with social media buttons, site navigation and short contact form.
 
-
 Added adaptive design to each section.
 
-An easy way to browse the site is by following the link: https://olehkozina.github.io/DogSite/
-
-
-
+An easy way to browse the site is by following the link: https://olehkozina.github.io/DogSite/dist/index.html
